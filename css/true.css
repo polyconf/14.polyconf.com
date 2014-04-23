@@ -1,5 +1,6 @@
 /* @override 
-	http://localhost:8888/poly/css/true.css */
+	http://localhost:8888/poly/css/true.css
+	http://localhost:8888/polyconf.com/css/true.css */
 
 
 @font-face {
@@ -319,6 +320,11 @@ section {
   padding: 20px 0 0;
 }
 
+#under-top-bar .clear {
+  clear: both;
+  background: #f00;
+}
+
 #under-top-bar .inline-block {
   margin-bottom: 20px;
   vertical-align: middle;
@@ -326,15 +332,15 @@ section {
 }
 
 #under-top-bar .inline-block > span {
-  padding: 20px 0;
   display: inline-block;
+  padding: 20px 0;
 }
 
 #under-top-bar #download-prospectus {
   margin: 0 1ex;
 }
 
-#under-top-bar #newsletter-form {
+#under-top-bar form {
   width: 300px;
   display: inline-block;
   margin-left: 1ex;
