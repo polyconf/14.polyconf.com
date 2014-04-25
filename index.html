@@ -26,7 +26,7 @@
           <li data-anchor-target="#top" data-0="margin-left: 0px" data-100-top-bottom="margin-left: 150px"><a href="#">Agenda</a></li>
           <li><a href="#">Venue</a></li>
           <li><a href="#">Sponsors</a></li>
-          <li class="buy-a-ticket"><a href="#">Buy a ticket</a></li>
+          <li class="buy-a-ticket disabled"><a href="#"><span class="soon"></span>Buy a ticket</a></li>
         </ul>
       </nav>
 
@@ -97,7 +97,7 @@
 
         <div class="buy-a-ticket text-center">
 
-          <a href="#" class="button small alert">Buy a ticket</a>
+          <a href="#" class="button small alert disabled"><span class="soon"></span>Buy a ticket</a>
 
         </div>
 
@@ -180,52 +180,67 @@
           <div class="speaker-list row">
 
             <div class="speaker small-6 medium-3 large-2 column">
-
-              <div class="img"><a style="background-image: url(files/speakers/david-nolen.jpg)">&nbsp;</a></div>
-              <h3>David Nolen</h3>
+            
+              <div class="img"><span class="go"><a href="#" class="twitter">&nbsp;</a><a href="#" class="website">&nbsp;</a></span><a class="face" style="background-image: url(files/speakers/david-nolen.jpg)">&nbsp;</a></div>
+              <h3><span class="flag pl"></span>David Nolen</h3>
               <h4>Software Engineer at Cognitect</h4>
               <ul class="tags">
-                <li class="js">JavaScript</li>
-                <li class="cljs">ClojureScript</li>
+                <li class="js">.js</li>
+                <li class="cljs">.cljs</li>
               </ul>
             </div>
 
             <div class="speaker small-6 medium-3 large-2 column">
 
-              <div class="img"><a style="background-image: url(files/speakers/reid-draper.jpg)">&nbsp;</a></div>
-              <h3>Reid Draper</h3>
+              <div class="img"><a class="face" style="background-image: url(files/speakers/reid-draper.jpg)">&nbsp;</a></div>
+              <h3><span class="flag pl"></span>Reid Draper</h3>
               <h4>Software Engineer at Basho</h4>
               <ul class="tags">
-                <li class="el">Erlang</li>
-                <li class="clj">Clojure</li>
+                <li class="el">.el</li>
+                <li class="cl">.cl</li>
               </ul>
 
             </div>
 
             <div class="speaker small-6 medium-3 large-2 column">
 
-              <div class="img"><a style="background-image: url(files/speakers/jack-franklin.jpg)">&nbsp;</a></div>
-              <h3>Jack Franklin</h3>
+              <div class="img"><a class="face" style="background-image: url(files/speakers/jack-franklin.jpg)">&nbsp;</a></div>
+              <h3><span class="flag pl"></span>Jack Franklin</h3>
               <h4>Software Engineer at GoCardless</h4>
 
               <ul class="tags">
-                <li class="js">JavaScript</li>
+                <li class="js">.js</li>
               </ul>
             </div>
 
             <div class="speaker small-6 medium-3 large-2 column">
 
-              <div class="img"><a style="background-image: url(files/speakers/henri-bergius.jpg)">&nbsp;</a></div>
-              <h3>Henri Bergius</h3>
+              <div class="img"><a class="face" style="background-image: url(files/speakers/henri-bergius.jpg)">&nbsp;</a></div>
+              <h3><span class="flag pl"></span>Henri Bergius</h3>
               <h4>Hacker and an occasional adventurer</h4>
 
               <ul class="tags">
-                <li class="js">JavaScript</li>
+                <li class="js">.js</li>
               </ul>
             </div>
 
 
-            <div class="tba speaker small-6 medium-3 large-2 column"><div class="img"><span>TBA</span></div></div>
+            <div class="tba speaker small-6 medium-3 large-2 column"><div class="img"><span>TBA</span></div>
+            
+<!--            <ul class="tags">
+              <li class="js">.js</li>
+              <li class="cl">.cl</li>
+              <li class="cljs">.cljs</li>
+              <li class="el">.el</li>
+              <li class="py">.py</li>
+              <li class="php">.php</li>
+              <li class="hs">.hs</li>
+              <li class="lua">.lua</li>
+              <li class="rb">.rb</li>
+              <li class="java">.java</li>
+            </ul>-->
+            
+            </div>
             <div class="tba speaker small-6 medium-3 large-2 column"><div class="img"><span>TBA</span></div></div>
             <div class="tba speaker small-6 medium-3 large-2 column"><div class="img"><span>TBA</span></div></div>
             <div class="tba speaker small-6 medium-3 large-2 column end"><div class="img"><span>TBA</span></div></div>
