@@ -55,6 +55,23 @@ h3 small {
   border-radius: 2px;
 }
 
+.button.disabled,
+.disabled a {
+   background-image: linear-gradient(#ccc,#aaa) !important; 
+}
+
+.button.disabled span.soon,
+.disabled a span.soon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: url(../img/soon.png) no-repeat right top;
+  background-size: 100%;
+}
+
 .button.postfix {
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
