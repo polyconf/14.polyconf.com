@@ -1,4 +1,4 @@
-/* @override 
+/* @override
 	http://localhost:8888/poly/css/true.css
 	http://localhost:8888/polyconf.com/css/true.css */
 
@@ -57,7 +57,7 @@ h3 small {
 
 .button.disabled,
 .disabled a {
-   background-image: linear-gradient(#ccc,#aaa) !important; 
+   background-image: linear-gradient(#ccc,#aaa) !important;
 }
 
 .button.disabled span.soon,
@@ -179,87 +179,87 @@ section {
 #top #logo #line1 {
   width: 117%;
   bottom: 0px;
-  -webkit-transform: rotate(-90deg);  
-     -moz-transform: rotate(-90deg);  
-      -ms-transform: rotate(-90deg);  
-          transform: rotate(-90deg);  
+  -webkit-transform: rotate(-90deg);
+     -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 #top #logo #line2 {
   bottom: 0px;
   width: 60%;
-  -webkit-transform: rotate(-56deg);  
-     -moz-transform: rotate(-56deg);  
-      -ms-transform: rotate(-56deg);  
-          transform: rotate(-56deg);  
+  -webkit-transform: rotate(-56deg);
+     -moz-transform: rotate(-56deg);
+      -ms-transform: rotate(-56deg);
+          transform: rotate(-56deg);
 }
 
 #top #logo #line3 {
   top: 12%;
   width: 76%;
-  -webkit-transform: rotate(64deg);  
-     -moz-transform: rotate(64deg);  
-      -ms-transform: rotate(64deg);  
-          transform: rotate(64deg);  
+  -webkit-transform: rotate(64deg);
+     -moz-transform: rotate(64deg);
+      -ms-transform: rotate(64deg);
+          transform: rotate(64deg);
 }
 
 #top #logo #line4 {
   top: 12%;
   width: 23.6%;
-  -webkit-transform: rotate(-43deg);  
-     -moz-transform: rotate(-43deg);  
-      -ms-transform: rotate(-43deg);  
-          transform: rotate(-43deg);  
+  -webkit-transform: rotate(-43deg);
+     -moz-transform: rotate(-43deg);
+      -ms-transform: rotate(-43deg);
+          transform: rotate(-43deg);
 }
 
 #top #logo #line5 {
   left: 33%;
   top: 63%;
   width: 76%;
-  -webkit-transform: rotate(-27.2deg);  
-     -moz-transform: rotate(-27.2deg);  
-      -ms-transform: rotate(-27.2deg);  
-          transform: rotate(-27.2deg);  
+  -webkit-transform: rotate(-27.2deg);
+     -moz-transform: rotate(-27.2deg);
+      -ms-transform: rotate(-27.2deg);
+          transform: rotate(-27.2deg);
 }
 
 #top #logo #line6 {
   left: 33.5%;
   top: 63%;
   width: 86%;
-  -webkit-transform: rotate(-101deg);  
-     -moz-transform: rotate(-101deg);  
-      -ms-transform: rotate(-101deg);  
-          transform: rotate(-101deg);  
+  -webkit-transform: rotate(-101deg);
+     -moz-transform: rotate(-101deg);
+      -ms-transform: rotate(-101deg);
+          transform: rotate(-101deg);
 }
 
 #top #logo #line7 {
   left: 100%;
   bottom: 62%;
   width: 37%;
-  -webkit-transform: rotate(-90deg);  
-     -moz-transform: rotate(-90deg);  
-      -ms-transform: rotate(-90deg);  
-          transform: rotate(-90deg);  
+  -webkit-transform: rotate(-90deg);
+     -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 #top #logo #line8 {
   left: 17%;
   top: 0;
   width: 84.5%;
--webkit-transform: rotate(9deg);  
-   -moz-transform: rotate(9deg);  
-    -ms-transform: rotate(9deg);  
-        transform: rotate(9deg);  
+-webkit-transform: rotate(9deg);
+   -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+        transform: rotate(9deg);
 }
 
 #top #logo #line9 {
   left: 100%;
   bottom: 62%;
   width: 96%;
-  -webkit-transform: rotate(-149deg);  
-     -moz-transform: rotate(-149deg);  
-      -ms-transform: rotate(-149deg);  
-          transform: rotate(-149deg);  
+  -webkit-transform: rotate(-149deg);
+     -moz-transform: rotate(-149deg);
+      -ms-transform: rotate(-149deg);
+          transform: rotate(-149deg);
 }
 
 #top #name {
@@ -298,7 +298,7 @@ section {
   opacity: 0;
   background: rgba(49,55,59,0.9);
   padding: 25px;
-  
+
 }
 
 #top .city,
@@ -331,7 +331,7 @@ section {
   top: 800px;
   left: 0;
   right: 0;
-  background: #06374b;  
+  background: #06374b;
   text-align: center;
   color: #fff;
   padding: 20px 0 0;
@@ -380,7 +380,7 @@ section {
 }
 
 #stats .column {
-  text-align: center;  
+  text-align: center;
 }
 
 #stats .column figure {
@@ -430,6 +430,30 @@ section {
 
 #speakers h3 .flag.pl {
   background: url(../img/flags/pl.png) no-repeat center;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+#speakers h3 .flag.us {
+  background: url(../img/flags/us.png) no-repeat center;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+#speakers h3 .flag.gb {
+  background: url(../img/flags/gb.png) no-repeat center;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+#speakers h3 .flag.de {
+  background: url(../img/flags/de.png) no-repeat center;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+#speakers h3 .flag.fi {
+  background: url(../img/flags/fi.png) no-repeat center;
   background-size: cover;
   border-radius: 100%;
 }
@@ -751,7 +775,7 @@ section {
 }
 
 footer {
-  background: #06374b;  
+  background: #06374b;
   padding: 20px 0;
   font-size: 14px;
   color: #fff;
@@ -788,43 +812,43 @@ footer #social a.twitter  { background-image: url(../img/icons/twitter-512.png);
 footer #social a.gplus    { background-image: url(../img/icons/google_plus-512.png); }
 footer #social a.linked   { background-image: url(../img/icons/linkedin-512.png); }
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
   #speakers .speaker  {
     min-height: 260px;
     margin: 20px 0;
   }
-  
+
   footer {
-    background: #06374b;  
+    background: #06374b;
     padding: 20px 0;
     font-size: 14px;
     color: #fff;
     height: auto;
   }
-  
+
   footer .columns {
     height: auto;
   }
-  
+
   footer #copy {
     position: static;
     top: auto;
     margin-top: 0;
     text-align: center;
   }
-  
+
   footer #social {
     position: static;
     top: auto;
     margin-top: 20px;
     right: auto;
     text-align: center;
-  }  
+  }
 
 }
 
-@media only screen and (max-width: 40em) { 
+@media only screen and (max-width: 40em) {
 
   #top nav {
     width: auto;
@@ -866,33 +890,33 @@ footer #social a.linked   { background-image: url(../img/icons/linkedin-512.png)
     background-position: center;
     opacity: 0.3;
   }
-  
+
   footer {
-    background: #06374b;  
+    background: #06374b;
     padding: 20px 0;
     font-size: 14px;
     color: #fff;
     height: auto;
   }
-  
+
   footer .columns {
     height: auto;
   }
-  
+
   footer #copy {
     position: static;
     top: auto;
     margin-top: 0;
     text-align: center;
   }
-  
+
   footer #social {
     position: static;
     top: auto;
     margin-top: 20px;
     right: auto;
     text-align: center;
-  }  
+  }
 
 }
 
@@ -929,54 +953,54 @@ footer #social a.linked   { background-image: url(../img/icons/linkedin-512.png)
 #top #logo #line2 {
   bottom: 0;
   width: 146px;
-  -webkit-transform: rotate(-56deg);  
+  -webkit-transform: rotate(-56deg);
 }
 
 #top #logo #line3 {
   top: 39px;
   width: 188px;
-  -webkit-transform: rotate(64deg);  
+  -webkit-transform: rotate(64deg);
 }
 
 #top #logo #line4 {
   top: 39px;
   width: 59px;
-  -webkit-transform: rotate(-44deg);  
+  -webkit-transform: rotate(-44deg);
 }
 
 #top #logo #line5 {
   left: 80px;
   top: 208px;
   width: 190px;
-  -webkit-transform: rotate(-27.2deg);  
+  -webkit-transform: rotate(-27.2deg);
 }
 
 #top #logo #line6 {
   left: 82px;
   top: 205px;
   width: 210px;
-  -webkit-transform: rotate(-101deg);  
+  -webkit-transform: rotate(-101deg);
 }
 
 #top #logo #line7 {
   left: 248px;
   bottom: 206px;
   width: 93px;
-  -webkit-transform: rotate(-90deg);  
+  -webkit-transform: rotate(-90deg);
 }
 
 #top #logo #line8 {
   left: 42px;
   top: -2px;
   width: 208px;
-  -webkit-transform: rotate(9deg);  
+  -webkit-transform: rotate(9deg);
 }
 
 #top #logo #line9 {
   left: 248px;
   bottom: 207px;
   width: 239px;
-  -webkit-transform: rotate(-149deg);  
+  -webkit-transform: rotate(-149deg);
 }
 
 #top #name {
