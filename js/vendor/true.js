@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-   var logoLines = $("#logo .line span");
+   var logoLines = $("#top .logo .line span");
 
    logoLines
    	.attr("data-anchor-target","#top")
@@ -46,7 +46,12 @@ $(document).ready(function(){
 //   chain(letters,0);
 
 
-  var s = skrollr.init();
+  if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+    skrollr.init({
+        forceHeight: false
+    });
+  }
+  
 
 
 })
