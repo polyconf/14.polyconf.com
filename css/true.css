@@ -91,7 +91,7 @@ section {
   padding: 0 2em;
 }
 
-#top {
+.top {
   position: fixed;
   top: 0;
   left: 0;
@@ -103,22 +103,23 @@ section {
   z-index: 1000000;
 }
 
-#second-bg {
+
+.second-bg {
   width: 100%;
   height: 100%;
 }
 
-#top #logo {
-  width: 340px;
-  height: 453px;
+.top .logo {
+  width: 270px;
+  height: 360px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -226px 0 0 -170px;
+  margin: -170px 0 0 -135px;
   border: 1px solid rgba(0,0,0,0);
 }
 
-#top nav {
+.top nav {
   position: absolute;
   top: 20px;
   left: 50%;
@@ -127,37 +128,37 @@ section {
   text-align: center;
 }
 
-#top nav ul {
+.top nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#top nav ul li {
+.top nav ul li {
   display: inline-block;
   text-align: center;
 }
 
-#top nav ul li a {
+.top nav ul li a {
   color: #fff;
   padding: 10px;
   display: block;
   font-size: 1.1em;
 }
 
-#top nav ul li.buy-a-ticket {
+.top nav ul li.buy-a-ticket {
   position: absolute;
   right: 0;
   top: 5px;
 }
 
-#top nav ul li.buy-a-ticket a {
+.top nav ul li.buy-a-ticket a {
   background-image: linear-gradient(#62a01d,#558a19);
   border-radius: 2px;
   padding: 5px 20px;
 }
 
-#top #logo .line {
+.top .logo .line {
   height: 3px;
   position: absolute;
   -webkit-transform-origin: left center;
@@ -166,7 +167,7 @@ section {
   border-radius: 3px;
 }
 
-#top #logo .line span {
+.top .logo .line span {
   display: block;
   background: #fff;
   position: absolute;
@@ -176,7 +177,7 @@ section {
   width: 100%;
 }
 
-#top #logo #line1 {
+.top .logo .line1 {
   width: 117%;
   bottom: 0px;
   -webkit-transform: rotate(-90deg);
@@ -185,7 +186,7 @@ section {
           transform: rotate(-90deg);
 }
 
-#top #logo #line2 {
+.top .logo .line2 {
   bottom: 0px;
   width: 60%;
   -webkit-transform: rotate(-56deg);
@@ -194,7 +195,7 @@ section {
           transform: rotate(-56deg);
 }
 
-#top #logo #line3 {
+.top .logo .line3 {
   top: 12%;
   width: 76%;
   -webkit-transform: rotate(64deg);
@@ -203,7 +204,7 @@ section {
           transform: rotate(64deg);
 }
 
-#top #logo #line4 {
+.top .logo .line4 {
   top: 12%;
   width: 23.6%;
   -webkit-transform: rotate(-43deg);
@@ -212,7 +213,7 @@ section {
           transform: rotate(-43deg);
 }
 
-#top #logo #line5 {
+.top .logo .line5 {
   left: 33%;
   top: 63%;
   width: 76%;
@@ -222,7 +223,7 @@ section {
           transform: rotate(-27.2deg);
 }
 
-#top #logo #line6 {
+.top .logo .line6 {
   left: 33.5%;
   top: 63%;
   width: 86%;
@@ -232,7 +233,7 @@ section {
           transform: rotate(-101deg);
 }
 
-#top #logo #line7 {
+.top .logo .line7 {
   left: 100%;
   bottom: 62%;
   width: 37%;
@@ -242,7 +243,7 @@ section {
           transform: rotate(-90deg);
 }
 
-#top #logo #line8 {
+.top .logo .line8 {
   left: 17%;
   top: 0;
   width: 84.5%;
@@ -252,7 +253,7 @@ section {
         transform: rotate(9deg);
 }
 
-#top #logo #line9 {
+.top .logo .line9 {
   left: 100%;
   bottom: 62%;
   width: 96%;
@@ -262,7 +263,7 @@ section {
           transform: rotate(-149deg);
 }
 
-#top #name {
+.top .name {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -272,21 +273,21 @@ section {
   color: #fff;
 }
 
-#top #name .letter {
+.top .name .letter {
   float: left;
   font-size: 60px;
   opacity: 1;
 }
 
-#top #name .letter img {
+.top .name .letter img {
 }
 
-#top #name #letter4 {
+.top .name .letter4 {
   margin-left: -5px;
   margin-right: 15px;
 }
 
-#top #about {
+.top #about {
   position: absolute;
   bottom: 0;
   color: #fff;
@@ -301,8 +302,8 @@ section {
 
 }
 
-#top .city,
-#top .date {
+.top .city,
+.top .date {
   text-align: center;
   font-size: 24px;
   line-height: 30px;
@@ -315,11 +316,11 @@ section {
   opacity: 0;
 }
 
-#top .city {
+.top .city {
   margin-left: -540px;
 }
 
-#top .date {
+.top .date {
   margin-left: 260px;
 }
 
@@ -680,6 +681,11 @@ section {
   margin-top: 100px;
 }
 
+#venue #map iframe {
+  width: 100%;
+  height: 500px;
+}
+
 #venue .hotels {
   padding-top: 100px;
 }
@@ -850,18 +856,30 @@ footer #social a.linked   { background-image: url(../img/icons/linkedin-512.png)
 
 @media only screen and (max-width: 40em) {
 
-  #top nav {
+  #hidden {
+    padding: 0;
+  }
+
+  .top {
+    position: relative;
+  }
+
+  #under-the-top {
+    positionition: static;
+  }
+
+  .top nav {
     width: auto;
     left: 0;
     right: 0;
   }
 
-  #top nav li {
+  .top nav li {
     display: none !important;
   }
 
 
-  #top nav li.buy-a-ticket {
+  .top nav li.buy-a-ticket {
     display: block !important;
     margin-right: 30px;
   }
@@ -925,7 +943,7 @@ footer #social a.linked   { background-image: url(../img/icons/linkedin-512.png)
 /*
 @media screen and (min-width: 1025px) and (max-height: 840px) {
 
-#top {
+.top {
   position: fixed;
   top: 0;
   left: 0;
@@ -935,7 +953,7 @@ footer #social a.linked   { background-image: url(../img/icons/linkedin-512.png)
   height: 500px;
 }
 
-#top #logo {
+.top #logo {
   width: 250px;
   height: 334px;
   position: absolute;
@@ -945,65 +963,65 @@ footer #social a.linked   { background-image: url(../img/icons/linkedin-512.png)
   border: 1px solid rgba(0,0,0,0);
 }
 
-#top #logo #line1 {
+.top .logo .line1 {
   width: 291px;
   bottom: 0px;
 }
 
-#top #logo #line2 {
+.top .logo .line2 {
   bottom: 0;
   width: 146px;
   -webkit-transform: rotate(-56deg);
 }
 
-#top #logo #line3 {
+.top .logo .line3 {
   top: 39px;
   width: 188px;
   -webkit-transform: rotate(64deg);
 }
 
-#top #logo #line4 {
+.top .logo .line4 {
   top: 39px;
   width: 59px;
   -webkit-transform: rotate(-44deg);
 }
 
-#top #logo #line5 {
+.top .logo .line5 {
   left: 80px;
   top: 208px;
   width: 190px;
   -webkit-transform: rotate(-27.2deg);
 }
 
-#top #logo #line6 {
+.top .logo .line6 {
   left: 82px;
   top: 205px;
   width: 210px;
   -webkit-transform: rotate(-101deg);
 }
 
-#top #logo #line7 {
+.top .logo .line7 {
   left: 248px;
   bottom: 206px;
   width: 93px;
   -webkit-transform: rotate(-90deg);
 }
 
-#top #logo #line8 {
+.top .logo .line8 {
   left: 42px;
   top: -2px;
   width: 208px;
   -webkit-transform: rotate(9deg);
 }
 
-#top #logo #line9 {
+.top .logo .line9 {
   left: 248px;
   bottom: 207px;
   width: 239px;
   -webkit-transform: rotate(-149deg);
 }
 
-#top #name {
+.top #name {
   position: absolute;
   top: 44%;
   left: 50%;
@@ -1013,30 +1031,30 @@ footer #social a.linked   { background-image: url(../img/icons/linkedin-512.png)
   color: #fff;
 }
 
-#top #name .letter {
+.top #name .letter {
   float: left;
   opacity: 0;
   display: inline;
   width: auto;
 }
 
-#top #name .letter img {
+.top #name .letter img {
   display: block;
 }
 
-#top #name #letter1 {
+.top #name #letter1 {
   margin-left: 0;
   width: 26px;
 }
 
-#top #name #letter1 {  width: 26px; }
-#top #name #letter2 {  width: 37px; }
-#top #name #letter3 {  width: 21px; }
-#top #name #letter4 {  width: 30px; margin-left: -2px; margin-right: 12px; }
-#top #name #letter5 {  width: 31px; }
-#top #name #letter6 {  width: 37px; }
-#top #name #letter7 {  width: 31px; }
-#top #name #letter8 {  width: 25px; }
+.top #name #letter1 {  width: 26px; }
+.top #name #letter2 {  width: 37px; }
+.top #name #letter3 {  width: 21px; }
+.top #name #letter4 {  width: 30px; margin-left: -2px; margin-right: 12px; }
+.top #name #letter5 {  width: 31px; }
+.top #name #letter6 {  width: 37px; }
+.top #name #letter7 {  width: 31px; }
+.top #name #letter8 {  width: 25px; }
 
 
 
