@@ -571,6 +571,27 @@ section {
 #speakers .speaker .tags li.rb   { background-color: #bd0400;}
 #speakers .speaker .tags li.java { background-color: #f1bb01;}
 
+#speakers h5 {
+  color: #bbb;
+  text-align: center;
+  font-family: Nexa;
+  margin-bottom: 1.3em;
+}
+
+#speakers h5 em {
+  font-style: normal;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  line-height: 41px;
+  color: #bbb;
+  font-family: Nexa;
+}
+
 
 #agenda .column {
   margin-top: 50px;
