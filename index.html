@@ -6,58 +6,45 @@
     <title>PolyConf Conference 2014 October</title>
     <meta name="description" content="PolyConf is a two-day, single track, multi-disciplinary conference on advanced technologies for programmers interested in polyglot approach to software development." />
     <meta name="author" content="PolyConf HQ" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/true.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/vendor/modernizr.js"></script>
+	<script src="js/foundation/foundation.js"></script>
+	<script src="js/foundation/foundation.equalizer.js"></script>
   </head>
   <body>
   <div id="hidden">
 
-    <div id="top" data-0="height: 600px" data-100-top-bottom="height: 100px" class="top hide-for-small-only">
-      <div class="second-bg" data-anchor-target="#top" data-0="background: rgba(0,26,42,0)" data-100-top-bottom="background: rgba(0,46,66,1)">
+    <div id="top" data-0="height:600px" data-500="height:100px" class="top hide-for-small-only">
+
+		<div id="lines-bg"   data-0="opacity:0.5" data-400="opacity:0"></div>
+		<div id="dark-bg"  data-100="opacity:0"    data-400="opacity:0.7"></div>
         <nav>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#speakers">Speakers</a></li>
-            <li data-anchor-target="#top" data-0="margin-left: 0px" data-100-top-bottom="margin-left: 150px"><a href="#">Agenda</a></li>
+            <li data-0="margin-left: 0px" data-500="margin-left: 150px"><a href="#">Agenda</a></li>
             <li><a href="#venue">Venue</a></li>
             <li><a href="#sponsors">Sponsors</a></li>
             <li class="buy-a-ticket disabled"><a href="#"><span class="soon"></span>Buy a ticket</a></li>
           </ul>
         </nav>
 
-        <div class="logo" data-anchor-target="#top" data-0="width: 270px; height: 360px; margin-left: -135px; margin-top: -170px" data-100-top-bottom="width: 60px; height: 80px; margin-left: -30px; margin-top: -40px">
+		<div class="logo" 
+			data-0="width:270px;height:470px;margin-left:-135px;top:126px" 
+			data-500="width:60px;height:76px;margin-left:-30px;top:12px"><div data-250="opacity:0" data-500="opacity:1">&nbsp;</div></div>
+		<div class="logo-type" data-0="opacity:1" data-200="opacity:0">&nbsp;</div>
 
-          <div class="line line1"><span></span></div>
-          <div class="line line2"><span></span></div>
-          <div class="line line3"><span></span></div>
-          <div class="line line4"><span></span></div>
-          <div class="line line5"><span></span></div>
-          <div class="line line6"><span></span></div>
-          <div class="line line7"><span></span></div>
-          <div class="line line8"><span></span></div>
-          <div class="line line9"><span></span></div>
-
+        <div class="about" data-0="opacity:1" data-200="opacity:0">
+	        <div class="city">POZnan*, Poland</div>
+			<div class="date">October 30-31, 2014</div>
         </div>
 
-        <div class="name">
-
-          <div class="letter letter1"><img src="img/letter1.png" /></div>
-          <div class="letter letter2"><img src="img/letter2.png" /></div>
-          <div class="letter letter3"><img src="img/letter3.png" /></div>
-          <div class="letter letter4"><img src="img/letter4.png" /></div>
-          <div class="letter letter5"><img src="img/letter5.png" /></div>
-          <div class="letter letter6"><img src="img/letter6.png" /></div>
-          <div class="letter letter7"><img src="img/letter7.png" /></div>
-          <div class="letter letter8"><img src="img/letter8.png" /></div>
-
-        </div>
-
-        <div class="city" data-200="opacity: 1" data-400="opacity:0">POZnan*, Poland</div>
-        <div class="date" data-200="opacity: 1" data-400="opacity:0">October 30-31, 2014</div>
-
-    </div></div>
+    </div>
 
     <div class="top top2 show-for-small-up hide-for-large-up">
       <div class="second-bg">
@@ -100,7 +87,7 @@
       </div>
     </div>
 
-    <section id="under-top-bar" data-anchor-target="#top" data-0="top: 600px" data--400-top-bottom="top: -400px"><div class="container">
+    <section id="under-top-bar" data-0="top:600px" data-700="top:-100px"><div class="container">
 
         <div class="prospectus inline-block">
           <span>More information soon </span><a href="http://bit.ly/polyconf-sponsorship-prospectus" class="button" id="download-prospectus">Download Sponsor Prospectus</a>
@@ -125,7 +112,7 @@
 
       <div class="container">
 
-        <h1 class="text-center">Welcome to Polyconf</h1>
+        <h1 class="text-center">Welcome to PolyConf</h1>
 
         <p class="text-center">
         PolyConf is a two-day, single track, multi-disciplinary conference on advanced technologies<br />
@@ -204,95 +191,91 @@
 
     <section id="speakers" class="dark">
 
-      <div class="container">
+      <div class="container"><div class="row">
 
         <h1 class="text-center">Speakers</h1>
 
-        <p class="text-center">
+        <p class="intro text-center">
           PolyConf is not focused on any particular language or area of technology. <br/>
           We encourage diverse topics oriented towards the future of Computer Science.
         </p>
 
-        <div class="speaker-list row">
+        <ul class="speaker-list medium-block-grid-5">
 
-          <div class="speaker small-6 medium-3 large-2 column">
+          <li class="speaker">
 
             <div class="img">
               <span class="go"><a href="http://twitter.com/swannodette" class="twitter">&nbsp;</a></span>
               <a class="face" style="background-image: url(files/speakers/david-nolen.jpg)">&nbsp;</a>
+              <span class="overlay">&nbsp;</span>
             </div>
             <h3><span class="flag us"></span>David Nolen</h3>
             <h4>Software Engineer at Cognitect</h4>
             <ul class="tags">
-              <li class="js">.js</li>
-              <li class="cljs">.cljs</li>
+              <li class="js">Javascript</li>
+              <li class="cljs">ClojureJS</li>
             </ul>
-          </div>
+            
+          </li>
 
-          <div class="speaker small-6 medium-3 large-2 column">
+          <li class="speaker">
 
             <div class="img">
               <span class="go"><a href="http://twitter.com/reiddraper" class="twitter">&nbsp;</a></span>
               <a class="face" style="background-image: url(files/speakers/reid-draper.jpg)">&nbsp;</a>
+              <span class="overlay">&nbsp;</span>
             </div>
             <h3><span class="flag us"></span>Reid Draper</h3>
             <h4>Software Engineer at Basho</h4>
             <ul class="tags">
-              <li class="el">.el</li>
-              <li class="cl">.cl</li>
+              <li class="el">Erlang</li>
+              <li class="cl">Clojure</li>
             </ul>
 
-          </div>
+          </li>
 
-          <div class="speaker small-6 medium-3 large-2 column">
+          <li class="speaker">
 
             <div class="img">
               <span class="go"><a href="http://twitter.com/Jack_Franklin" class="twitter">&nbsp;</a></span>
               <a class="face" style="background-image: url(files/speakers/jack-franklin.jpg)">&nbsp;</a>
+              <span class="overlay">&nbsp;</span>
             </div>
             <h3><span class="flag gb"></span>Jack Franklin</h3>
             <h4>Software Engineer at GoCardless</h4>
 
             <ul class="tags">
-              <li class="js">.js</li>
+              <li class="js">Javascript</li>
             </ul>
-          </div>
+          </li>
 
-          <div class="speaker small-6 medium-3 large-2 column">
+          <li class="speaker">
 
             <div class="img">
               <span class="go"><a href="http://twitter.com/bergie" class="twitter">&nbsp;</a></span>
               <a class="face" style="background-image: url(files/speakers/henri-bergius.jpg)">&nbsp;</a>
+              <span class="overlay">&nbsp;</span>
             </div>
             <h3><span class="flag fi"></span>Henri Bergius</h3>
             <h4>Hacker and an occasional adventurer</h4>
 
             <ul class="tags">
-              <li class="js">.js</li>
+              <li class="js">Javascript</li>
             </ul>
-          </div>
+            
+          </li>
 
 
-          <div class="tba speaker small-6 medium-3 large-2 column"><div class="img"><span>TBA</span></div>
+          <li class="tba speaker"><div class="img">&nbsp;</div></li>
+          <li class="tba speaker"><div class="img">&nbsp;</div></li>
+          <li class="tba speaker"><div class="img">&nbsp;</div></li>
+          <li class="tba speaker"><div class="img">&nbsp;</div></li>
+          <li class="tba speaker"><div class="img">&nbsp;</div></li>
+          <li class="tba speaker"><div class="img">&nbsp;</div></li>
+          
+          </ul>
 
-            <!--            <ul class="tags">
-              <li class="js">.js</li>
-              <li class="cl">.cl</li>
-              <li class="cljs">.cljs</li>
-              <li class="el">.el</li>
-              <li class="py">.py</li>
-              <li class="php">.php</li>
-              <li class="hs">.hs</li>
-              <li class="lua">.lua</li>
-              <li class="rb">.rb</li>
-              <li class="java">.java</li>
-            </ul>-->
-
-          </div>
-          <div class="tba speaker small-6 medium-3 large-2 column"><div class="img"><span>TBA</span></div></div>
-          <div class="tba speaker small-6 medium-3 large-2 column"><div class="img"><span>TBA</span></div></div>
-          <div class="tba speaker small-6 medium-3 large-2 column end"><div class="img"><span>TBA</span></div></div>
-        </div>
+        </div></div>
 
         <h2 id="cfp" class="text-center">Call for Presentations</h2>
 
@@ -347,6 +330,31 @@
       </div>
 
     </section>
+    
+    <section id="poznan" class="dark">
+    
+    	<div class="container">
+    	
+	        <h1 class="text-center">Come to Poznan.</h1>
+    		<p class="intro text-center">
+    			Etiam At Risus Et Justo Dignissim Congue. Donec Congue Lacinia Dui,<br />
+				A Porttitor Lectus Condimentum Laoreet. Nunc Eu Ullamcorper
+    		</p>
+    	
+    	</div>
+    
+    </section>
+    
+    <ul id="venue-photos">
+    
+    	<li class="photo" style="background-image:url(img/venue/1.jpg)"><div class="img"></div></li>
+    	<li class="photo" style="background-image:url(img/venue/2.jpg)"><div class="img"></div></li>
+    	<li class="empty"></li>
+    	<li class="empty"></li>
+    	<li class="photo" style="background-image:url(img/venue/3.jpg)"><div class="img"></div></li>
+    	<li class="photo" style="background-image:url(img/venue/4.jpg)"><div class="img"></div></li>
+    
+    </ul>
 
     <section id="venue" class="dark">
 
@@ -446,19 +454,49 @@
 
     <footer>
       <div class="row">
-        <div class="small-12 columns ">
-          <div id="copy">
-
-            &copy; Copyright by Polyconf, 2014 &nbsp;&nbsp;&nbsp; www by <a href="http://www.true.pl">true.pl</a> &nbsp;&nbsp;&nbsp; icons by <a href="http://icons8.com">Icons8</a>
-
+        <div class="small-12 medium-3 columns">
+          <p id="copy">&copy; Copyright by PolyConf, 2014</p>
+          <p id="bytrue">www by <a href="http://www.true.pl">true.pl</a>
+          <br />icons by <a href="http://icons8.com">Icons8</a>
+          </p>
+        </div>
+        
+        <div class="small-12 medium-3 columns">
+          <div>
+          
+            <h4>About PolyConf</h4>
+            
+            <ul>
+              <li><a href="#top">Go to top</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#speakers">Speakers</a></li>
+              <li><a href="#agenda">Agenda</a></li>
+              <li><a href="#venue">Venue</a></li>
+              <li><a href="#sponsors">Sponsors</a></li>
+            </ul>            
+            
           </div>
+        </div>
+                
+        <div class="small-12 medium-3 columns">
           <div id="social">
+          
+            <h4>Stay connected</h4>
 
             <a href="http://twitter.com/polyconfhq" class="twitter">&nbsp;</a>
             <a href="http://facebook.com/polyconf" class="facebook">&nbsp;</a>
 
           </div>
         </div>
+                
+        <div class="small-12 medium-3 columns">
+          <div>
+          
+            <a href="#" class="button small alert disabled"><span class="soon"></span>Buy a ticket</a>
+        
+          </div>
+        </div>
+        
       </div>
 
     </footer>
