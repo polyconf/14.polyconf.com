@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+	$(document).foundation();
+
+
    var logoLines = $("#top .logo .line span");
 
    logoLines
