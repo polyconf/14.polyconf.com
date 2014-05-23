@@ -320,6 +320,9 @@ h3 small {
 
 }
 
+#under-top-bar {
+	padding-top: 20px;
+}
 
 #under-top-bar .clear {
   clear: both;
@@ -642,33 +645,40 @@ section {
 }
 
 footer {
-  background: #06374b;
+  background-image: -webkit-radial-gradient(50% 100%, ellipse farthest-corner, #0d668f, #032433);
   padding: 20px 0;
   font-size: 14px; 
   color: #fff;
+  
+  h4 {
+	  color: #fff;
+	  font-size: rem-calc(20px);
+  }
+
+  p, ul {
+	  font-size: 16px; 
+	  font-weight: 300;
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+  }
+  
+  p.copy {
+	  margin-top: 2em;
+	  font-size: 14px;
+	  
+  }
+
 }
 
-footer .columns {
-}
+footer #social a {}
 
-footer #copy {
-}
-
-footer #social {
-}
-
-footer #social a {
-  display: inline-block;
-  background-size: 32px;
-  width: 32px;
-  height: 32px;
-  margin-left: 1em;
-}
-
+/*
 footer #social a.facebook { background-image: url(../img/icons/facebook-512.png); }
 footer #social a.twitter  { background-image: url(../img/icons/twitter-512.png); }
 footer #social a.gplus    { background-image: url(../img/icons/google_plus-512.png); }
 footer #social a.linked   { background-image: url(../img/icons/linkedin-512.png); }
+*/
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 

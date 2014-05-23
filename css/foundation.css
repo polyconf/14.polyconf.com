@@ -5696,6 +5696,9 @@ h3 small {
     #speakers .speaker-list .speaker.tba .img {
       background: url(../img/speaker-tba.png) no-repeat center; }
 
+#under-top-bar {
+  padding-top: 20px; }
+
 #under-top-bar .clear {
   clear: both;
   background: #f00; }
@@ -5963,30 +5966,29 @@ section {
   margin-top: 2em; }
 
 footer {
-  background: #06374b;
+  background-image: -webkit-radial-gradient(50% 100%, ellipse farthest-corner, #0d668f, #032433);
   padding: 20px 0;
   font-size: 14px;
   color: #fff; }
+  footer h4 {
+    color: #fff;
+    font-size: 1.25rem; }
+  footer p, footer ul {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  footer p.copy {
+    margin-top: 2em;
+    font-size: 14px; }
 
-footer #social a {
-  display: inline-block;
-  background-size: 32px;
-  width: 32px;
-  height: 32px;
-  margin-left: 1em; }
-
-footer #social a.facebook {
-  background-image: url(../img/icons/facebook-512.png); }
-
-footer #social a.twitter {
-  background-image: url(../img/icons/twitter-512.png); }
-
-footer #social a.gplus {
-  background-image: url(../img/icons/google_plus-512.png); }
-
-footer #social a.linked {
-  background-image: url(../img/icons/linkedin-512.png); }
-
+/*
+footer #social a.facebook { background-image: url(../img/icons/facebook-512.png); }
+footer #social a.twitter  { background-image: url(../img/icons/twitter-512.png); }
+footer #social a.gplus    { background-image: url(../img/icons/google_plus-512.png); }
+footer #social a.linked   { background-image: url(../img/icons/linkedin-512.png); }
+*/
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   #speakers .speaker {
     min-height: 260px;
