@@ -1524,10 +1524,10 @@ button, .button {
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  padding-top: 1rem;
-  padding-right: 2rem;
-  padding-bottom: 1.0625rem;
-  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5625rem;
+  padding-left: 1rem;
   font-size: 1rem;
   /*     @else                            { font-size: $padding - rem-calc(2); } */
   background-color: #008cba;
@@ -1536,10 +1536,10 @@ button, .button {
   -webkit-transition: background-color 300ms ease-out;
   -moz-transition: background-color 300ms ease-out;
   transition: background-color 300ms ease-out;
-  padding-top: 1rem;
-  padding-right: 2rem;
-  padding-bottom: 1.0625rem;
-  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5625rem;
+  padding-left: 1rem;
   font-size: 1rem;
   /*     @else                            { font-size: $padding - rem-calc(2); } */ }
   button:hover, button:focus, .button:hover, .button:focus {
@@ -1571,24 +1571,24 @@ button, .button {
     button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
       color: white; }
   button.large, .button.large {
-    padding-top: 1.125rem;
-    padding-right: 2.25rem;
-    padding-bottom: 1.1875rem;
-    padding-left: 2.25rem;
-    font-size: 1.25rem;
-    /*     @else                            { font-size: $padding - rem-calc(2); } */ }
-  button.small, .button.small {
-    padding-top: 0.875rem;
-    padding-right: 1.75rem;
-    padding-bottom: 0.9375rem;
-    padding-left: 1.75rem;
-    font-size: 0.8125rem;
-    /*     @else                            { font-size: $padding - rem-calc(2); } */ }
-  button.tiny, .button.tiny {
     padding-top: 0.625rem;
     padding-right: 1.25rem;
     padding-bottom: 0.6875rem;
     padding-left: 1.25rem;
+    font-size: 1.25rem;
+    /*     @else                            { font-size: $padding - rem-calc(2); } */ }
+  button.small, .button.small {
+    padding-top: 0.375rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.4375rem;
+    padding-left: 0.75rem;
+    font-size: 0.8125rem;
+    /*     @else                            { font-size: $padding - rem-calc(2); } */ }
+  button.tiny, .button.tiny {
+    padding-top: 0.25rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.3125rem;
+    padding-left: 0.5rem;
     font-size: 0.6875rem;
     /*     @else                            { font-size: $padding - rem-calc(2); } */ }
   button.expand, .button.expand {
@@ -5447,7 +5447,8 @@ th.hide-for-touch {
 
 h1 {
   font-weight: 300;
-  font-size: 3rem; }
+  font-size: 3rem;
+  margin-bottom: 1em; }
 
 .dark * {
   color: #fff; }
@@ -5470,7 +5471,9 @@ h3 small {
 .intro {
   font-weight: 300;
   font-size: 1.5rem;
-  margin-bottom: 2em; }
+  margin-bottom: 3em; }
+  .intro small {
+    font-size: 1.125rem; }
 
 #hidden {
   position: relative;
@@ -5509,11 +5512,11 @@ h3 small {
     left: 0; }
   #top .logo {
     position: absolute;
-    top: 130px;
+    top: 127px;
     left: 50%;
-    width: 270px;
-    height: 360px;
-    margin: 0 0 0 -135px;
+    width: 276px;
+    height: 476px;
+    margin: 0 0 0 -138px;
     background: url(../img/logo.svg) no-repeat center top;
     background-size: 100% auto; }
     #top .logo > div {
@@ -5695,6 +5698,73 @@ h3 small {
         background-color: #666 !important; }
     #speakers .speaker-list .speaker.tba .img {
       background: url(../img/speaker-tba.png) no-repeat center; }
+    #speakers .speaker-list .speaker.tba.short {
+      min-height: 200px; }
+
+#call {
+  background: #0b8c41; }
+  #call .intro small {
+    color: #fff;
+    opacity: 0.85;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 0.5em 2em 0.6em;
+    margin: 1em 0 0;
+    line-height: 1.4em; }
+  #call .steps {
+    display: block;
+    padding: 0;
+    margin: 0 0;
+    *zoom: 1; }
+    #call .steps:before, #call .steps:after {
+      content: " ";
+      display: table; }
+    #call .steps:after {
+      clear: both; }
+    #call .steps > li {
+      display: block;
+      height: auto;
+      float: left;
+      padding: 0 0 0; }
+    #call .steps > li {
+      width: 20%;
+      padding: 0 0 0;
+      list-style: none; }
+      #call .steps > li:nth-of-type(n) {
+        clear: none; }
+      #call .steps > li:nth-of-type(5n+1) {
+        clear: both; }
+    #call .steps > li {
+      min-height: 150px;
+      text-align: center;
+      clear: none !important; }
+      #call .steps > li em {
+        font-size: 1.25rem;
+        display: block;
+        background: #fff;
+        color: #0b8c41;
+        font-style: normal;
+        width: 40px;
+        height: 40px;
+        margin: 0 auto 1em;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 100%; }
+      #call .steps > li.arrow {
+        background: url(../img/call-arrow.svg) no-repeat center 58px;
+        background-size: 50% auto;
+        min-height: 150px; }
+  #call .buy-a-ticket {
+    margin-top: 2em; }
+    #call .buy-a-ticket .button {
+      border-radius: 5px;
+      background: linear-gradient(#dddddd, #eeeeee);
+      color: #0b8c41;
+      border: 1px solid #097436;
+      border-bottom-color: #054520;
+      -webkit-box-shadow: 0px 2px 0px #075c2b, inset 0 2px 0px #fff;
+      -moz-box-shadow: 0px 2px 0px #075c2b, inset 0 2px 0px #fff;
+      box-shadow: 0px 2px 0px #075c2b, inset 0 2px 0px #fff; }
 
 #under-top-bar {
   padding-top: 20px; }
