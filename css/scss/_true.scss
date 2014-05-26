@@ -44,8 +44,9 @@ h3 small {
 }
 
 #top {
-
+	background: #04354c;
 	background-image: -webkit-radial-gradient(50% 100%, ellipse farthest-corner, #0d668f, #04354c);
+	background-image:    -moz-radial-gradient(50% 100%, ellipse farthest-corner, #0d668f, #04354c);
 	background-image: 		  radial-gradient(50% 100%, ellipse farthest-corner, #0d668f, #04354c);
 	position: fixed;
 	top: 0;
@@ -747,7 +748,10 @@ section {
 }
 
 footer {
+  background: #0d668f;
   background-image: -webkit-radial-gradient(50% 100%, ellipse farthest-corner, #0d668f, #032433);
+  background-image: -moz-radial-gradient(50% 100%, ellipse farthest-corner, #0d668f, #032433);
+  background-image: radial-gradient(50% 100%, ellipse farthest-corner, #0d668f, #032433);
   padding: 20px 0;
   font-size: 14px; 
   color: #fff;
