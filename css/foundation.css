@@ -5480,7 +5480,9 @@ h3 small {
   padding-top: 700px; }
 
 #top {
+  background: #04354c;
   background-image: -webkit-radial-gradient(50% 100%, ellipse farthest-corner, #0d668f, #04354c);
+  background-image: -moz-radial-gradient(50% 100%, ellipse farthest-corner, #0d668f, #04354c);
   background-image: radial-gradient(50% 100%, ellipse farthest-corner, #0d668f, #04354c);
   position: fixed;
   top: 0;
@@ -5672,6 +5674,22 @@ h3 small {
         right: 0;
         bottom: 0;
         left: 0; }
+      #speakers .speaker-list .speaker .img .go {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        z-index: 10000;
+        width: 32px;
+        height: 32px;
+        background: url(../img/speaker-twitter.png) no-repeat left bottom; }
+        #speakers .speaker-list .speaker .img .go a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: url(../img/twitter.svg) no-repeat center;
+          background-size: 20px auto; }
+        #speakers .speaker-list .speaker .img .go:hover {
+          background: url(../img/speaker-twitter-h.png) no-repeat left bottom; }
     #speakers .speaker-list .speaker h3 {
       margin: 0.5em 0 0;
       font-weight: 500;
@@ -6036,7 +6054,10 @@ section {
   margin-top: 2em; }
 
 footer {
+  background: #0d668f;
   background-image: -webkit-radial-gradient(50% 100%, ellipse farthest-corner, #0d668f, #032433);
+  background-image: -moz-radial-gradient(50% 100%, ellipse farthest-corner, #0d668f, #032433);
+  background-image: radial-gradient(50% 100%, ellipse farthest-corner, #0d668f, #032433);
   padding: 20px 0;
   font-size: 14px;
   color: #fff; }
