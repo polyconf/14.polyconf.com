@@ -1,396 +1,395 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+  <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="PolyConf is a two-day, single track, multi-disciplinary conference on advanced technologies for programmers interested in polyglot approach to software development." />
-  <meta name="author" content="PolyConf HQ & true WODKOWSKI" />
+    <meta name="description" content="PolyConf is a two-day, single track, multi-disciplinary conference on advanced technologies for programmers interested in polyglot approach to software development." />
+    <meta name="author" content="PolyConf HQ & true WODKOWSKI" />
 
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
-
-
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link');
-                    for (var i = 0; i < links.length;i++) {
-                    var link = links[i];
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
 
 
-  <link rel='stylesheet' href='assets/css/normalize.css'>
-<link rel='stylesheet' href='assets/css/style.css'>
-  <script src='assets/js/jquery-2.1.1.min.js'></script>
-<script src='assets/js/skrollr.js'></script>
-<script src='assets/js/app.js'></script>
-
-  <link href="assets/favicon.ico" rel="shortcut icon">
-  <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <title>PolyConf Conference 2014 October</title>
-
-</head>
-
-<body>
-
-
-  <div id="wrapper">
-
-  <header>
-
-    <div id="lines-bg"></div>
-    <div id="dark-bg"></div>
-
-    <div class="container">
-
-    <nav>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#speakers">Speakers</a></li>
-    <li data-0="margin-left: 0px" data-500="margin-left: 150px"><a href="#">Agenda</a></li>
-    <li><a href="#venue">Venue</a></li>
-    <li><a href="#sponsors">Sponsors</a></li>
-    <li class="buy-a-ticket disabled"><a href="#"><span class="soon"></span>Buy a ticket</a></li>
-  </ul>
-</nav>
-
-    <div id="logo">
-      <div id="light-logo">
-        <div id="bold-logo"></div>
-      </div>
-    </div>
-    <div id="name"></div>
-
-    <div id="date-place">
-      <div id="conf-place">POZnan*, Poland</div>
-      <div id="conf-date">October 30-31, 2014</div>
-    </div>
-
-    </div>
-
-  </header>
+    <!-- Hammer reload -->
+    <script>
+      setInterval(function(){
+        try {
+          if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+          ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+          ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+          ws.onmessage = function(){
+            var links = document.getElementsByTagName('link');
+            for (var i = 0; i < links.length;i++) {
+              var link = links[i];
+              if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
+                link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+              }
+            }
+          }
+        }catch(e){}
+      }, 1000)
+    </script>
+    <!-- /Hammer reload -->
 
 
-    <section id="the-bar"><div class="container">
+    <link rel='stylesheet' href='assets/css/normalize.css'>
+    <link rel='stylesheet' href='assets/css/style.css'>
+    <script src='assets/js/jquery-2.1.1.min.js'></script>
+    <script src='assets/js/skrollr.js'></script>
+    <script src='assets/js/app.js'></script>
 
-        <div class="prospectus inline-block">
-          <span>For more information </span><a href="http://bit.ly/polyconf-sponsorship-prospectus" class="button" id="download-prospectus">Download Sponsor Prospectus</a>
+    <link href="assets/favicon.ico" rel="shortcut icon">
+    <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <title>PolyConf Conference 2014 October</title>
+
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <header>
+
+        <div id="lines-bg"></div>
+        <div id="dark-bg"></div>
+
+        <div class="container">
+
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#speakers">Speakers</a></li>
+              <li data-0="margin-left: 0px" data-500="margin-left: 150px"><a href="#">Agenda</a></li>
+              <li><a href="#venue">Venue</a></li>
+              <li><a href="#sponsors">Sponsors</a></li>
+              <li class="buy-a-ticket disabled"><a href="#"><span class="soon"></span>Buy a ticket</a></li>
+            </ul>
+          </nav>
+
+          <div id="logo">
+            <div id="light-logo">
+              <div id="bold-logo"></div>
+            </div>
+          </div>
+          <div id="name"></div>
+
+          <div id="date-place">
+            <div id="conf-place">POZnan*, Poland</div>
+            <div id="conf-date">October 30-31, 2014</div>
+          </div>
+
         </div>
-        <div class="newsletter inline-block"><span>or just join our newsletter for updates</span>
-          <form action="http://nukomeet.us7.list-manage2.com/subscribe/post?u=3c16fa8c924b5ae06d0d07285&amp;id=678f9e533e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" data-abide>
-            <div id="newsletter-form" class="inline-block">
+
+      </header>
+
+
+      <section id="the-bar"><div class="container">
+
+          <div class="prospectus inline-block">
+            <span>For more information </span><a href="http://bit.ly/polyconf-sponsorship-prospectus" class="button" id="download-prospectus">Download Sponsor Prospectus</a>
+          </div>
+          <div class="newsletter inline-block"><span>or just join our newsletter for updates</span>
+            <form action="http://nukomeet.us7.list-manage2.com/subscribe/post?u=3c16fa8c924b5ae06d0d07285&amp;id=678f9e533e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" data-abide>
+              <div id="newsletter-form" class="inline-block">
                 <input type="text" name="EMAIL" placeholder="Enter email" class="text"/>
                 <input type="submit" href="#" class="small button submit"/>
-            </div>
-          </form>
-        </div>
+              </div>
+            </form>
+          </div>
 
-    </div></section>
+      </div></section>
 
-    <section id="about">
+      <section id="about">
 
-      <div class="container">
+        <div class="container">
 
-        <h1 class="text-center">Welcome to PolyConf</h1>
+          <h1 class="text-center">Welcome to PolyConf</h1>
 
-        <p class="intro text-center">
-        PolyConf is a two-day, single track, multi-disciplinary conference on advanced technologies<br class="hide-on-mobile" />
-        for programmers interested in polyglot approach to software development.<br class="hide-on-mobile" />
-        Our goal is to help unify different tech communities in Europe.
-        </p>
+          <p class="intro text-center">
+            PolyConf is a two-day, single track, multi-disciplinary conference on advanced technologies<br class="hide-on-mobile" />
+            for programmers interested in polyglot approach to software development.<br class="hide-on-mobile" />
+            Our goal is to help unify different tech communities in Europe.
+          </p>
 
-        <div class="buy-a-ticket text-center">
+          <div class="buy-a-ticket text-center">
 
-          <a href="#" class="button small alert disabled"><span class="soon"></span>Buy a ticket</a>
+            <a href="#" class="button small alert disabled"><span class="soon"></span>Buy a ticket</a>
 
-        </div>
-
-      </div>
-
-    </section>
-
-    <section id="stats">
-
-      <div class="container">
-
-        <div class="number of days">
-
-          <figure></figure>
-          <span class="big">2</span>
-          <span class="small">days</span>
+          </div>
 
         </div>
 
-        <div class="number of attendees">
+      </section>
 
-          <figure></figure>
-          <span class="big">300</span>
-          <span class="small">expected<br />attendees</span>
+      <section id="stats">
+
+        <div class="container">
+
+          <div class="number of days">
+
+            <figure></figure>
+            <span class="big">2</span>
+            <span class="small">days</span>
+
+          </div>
+
+          <div class="number of attendees">
+
+            <figure></figure>
+            <span class="big">300</span>
+            <span class="small">expected<br />attendees</span>
+
+          </div>
+
+          <div class="number of talks">
+
+            <figure></figure>
+            <span class="big">20</span>
+            <span class="small">talks</span>
+
+          </div>
+
+          <div class="number of workshops">
+
+            <figure></figure>
+            <span class="big">2</span>
+            <span class="small">workshops</span>
+
+          </div>
+
+          <div class="number of parties">
+
+            <figure></figure>
+            <span class="big">2</span>
+            <span class="small">parties</span>
+
+          </div>
 
         </div>
 
-        <div class="number of talks">
+      </section>
 
-          <figure></figure>
-          <span class="big">20</span>
-          <span class="small">talks</span>
+      <section id="speakers" class="dark">
 
-        </div>
+        <div class="container">
 
-        <div class="number of workshops">
+          <h1 class="text-center">Speakers</h1>
 
-          <figure></figure>
-          <span class="big">2</span>
-          <span class="small">workshops</span>
+          <p class="intro text-center">
+            PolyConf is not focused on any particular language or area of technology.<br class="hide-on-mobile" />
+            We encourage diverse topics oriented towards the future of Computer Science.
+          </p>
 
-        </div>
+          <ul class="speaker-list">
 
-        <div class="number of parties">
+            <li class="speaker">
 
-          <figure></figure>
-          <span class="big">2</span>
-          <span class="small">parties</span>
+              <div class="img">
+                <a class="face" style="background-image: url(assets/speakers/david-nolen.jpg)">&nbsp;</a>
+                <span class="overlay">&nbsp;</span>
+                <span class="go"><a href="http://twitter.com/swannodette" class="twitter">&nbsp;</a></span>
+              </div>
+              <h3><span class="flag us"></span>David Nolen</h3>
+              <h4>Software Engineer at Cognitect</h4>
+              <ul class="tags">
+                <li class="js">JavaScript</li>
+                <li class="cljs">ClojureScript</li>
+              </ul>
 
-        </div>
+            </li>
 
-      </div>
+            <li class="speaker">
 
-    </section>
+              <div class="img">
+                <span class="go"><a href="http://twitter.com/reiddraper" class="twitter">&nbsp;</a></span>
+                <a class="face" style="background-image: url(assets/speakers/reid-draper.jpg)">&nbsp;</a>
+                <span class="overlay">&nbsp;</span>
+              </div>
+              <h3><span class="flag us"></span>Reid Draper</h3>
+              <h4>Software Engineer at Basho</h4>
+              <ul class="tags">
+                <li class="el">Erlang</li>
+                <li class="cl">Clojure</li>
+              </ul>
 
-    <section id="speakers" class="dark">
+            </li>
 
-      <div class="container">
+            <li class="speaker">
 
-        <h1 class="text-center">Speakers</h1>
+              <div class="img">
+                <span class="go"><a href="http://twitter.com/Jack_Franklin" class="twitter">&nbsp;</a></span>
+                <a class="face" style="background-image: url(assets/speakers/jack-franklin.jpg)">&nbsp;</a>
+                <span class="overlay">&nbsp;</span>
+              </div>
+              <h3><span class="flag gb"></span>Jack Franklin</h3>
+              <h4>Software Engineer at GoCardless</h4>
 
-        <p class="intro text-center">
-          PolyConf is not focused on any particular language or area of technology.<br class="hide-on-mobile" />
-          We encourage diverse topics oriented towards the future of Computer Science.
-        </p>
+              <ul class="tags">
+                <li class="js">JavaScript</li>
+              </ul>
+            </li>
 
-        <ul class="speaker-list">
+            <li class="speaker">
 
-          <li class="speaker">
+              <div class="img">
+                <span class="go"><a href="http://twitter.com/bergie" class="twitter">&nbsp;</a></span>
+                <a class="face" style="background-image: url(assets/speakers/henri-bergius.jpg)">&nbsp;</a>
+                <span class="overlay">&nbsp;</span>
+              </div>
+              <h3><span class="flag fi"></span>Henri Bergius</h3>
+              <h4>Hacker and an occasional adventurer</h4>
 
-            <div class="img">
-              <a class="face" style="background-image: url(assets/speakers/david-nolen.jpg)">&nbsp;</a>
-              <span class="overlay">&nbsp;</span>
-              <span class="go"><a href="http://twitter.com/swannodette" class="twitter">&nbsp;</a></span>
-            </div>
-            <h3><span class="flag us"></span>David Nolen</h3>
-            <h4>Software Engineer at Cognitect</h4>
-            <ul class="tags">
-              <li class="js">JavaScript</li>
-              <li class="cljs">ClojureScript</li>
-            </ul>
+              <ul class="tags">
+                <li class="js">JavaScript</li>
+              </ul>
 
-          </li>
+            </li>
 
-          <li class="speaker">
+            <li class="speaker">
 
-            <div class="img">
-              <span class="go"><a href="http://twitter.com/reiddraper" class="twitter">&nbsp;</a></span>
-              <a class="face" style="background-image: url(assets/speakers/reid-draper.jpg)">&nbsp;</a>
-              <span class="overlay">&nbsp;</span>
-            </div>
-            <h3><span class="flag us"></span>Reid Draper</h3>
-            <h4>Software Engineer at Basho</h4>
-            <ul class="tags">
-              <li class="el">Erlang</li>
-              <li class="cl">Clojure</li>
-            </ul>
+              <div class="img">
+                <span class="go"><a href="http://twitter.com/gar1t" class="twitter">&nbsp;</a></span>
+                <a class="face" style="background-image: url(assets/speakers/garret-smith.jpg)">&nbsp;</a>
+                <span class="overlay">&nbsp;</span>
+              </div>
+              <h3><span class="flag us"></span>Garret Smith</h3>
+              <h4>Programmer-In-Anger at CloudBees</h4>
 
-          </li>
+              <ul class="tags">
+                <li class="js">Python</li>
+                <li class="el">Erlang</li>
+                <li class="c">C/C++</li>
+              </ul>
 
-          <li class="speaker">
+            </li>
 
-            <div class="img">
-              <span class="go"><a href="http://twitter.com/Jack_Franklin" class="twitter">&nbsp;</a></span>
-              <a class="face" style="background-image: url(assets/speakers/jack-franklin.jpg)">&nbsp;</a>
-              <span class="overlay">&nbsp;</span>
-            </div>
-            <h3><span class="flag gb"></span>Jack Franklin</h3>
-            <h4>Software Engineer at GoCardless</h4>
+            <li class="speaker">
 
-            <ul class="tags">
-              <li class="js">JavaScript</li>
-            </ul>
-          </li>
+              <div class="img">
+                <span class="go"><a href="http://twitter.com/corbett" class="twitter">&nbsp;</a></span>
+                <a class="face" style="background-image: url(assets/speakers/christine-corbett-moran.jpg)">&nbsp;</a>
+                <span class="overlay">&nbsp;</span>
+              </div>
+              <h3><span class="flag us"></span>Christine Corbett Moran</h3>
+              <h4>CTO Circle of 6; Lead Dev Open WhisperSystems</h4>
 
-          <li class="speaker">
+              <ul class="tags">
+                <li class="js">Python</li>
+                <li class="c">C/C++</li>
+                <li class="el">Objective C</li>
+              </ul>
 
-            <div class="img">
-              <span class="go"><a href="http://twitter.com/bergie" class="twitter">&nbsp;</a></span>
-              <a class="face" style="background-image: url(assets/speakers/henri-bergius.jpg)">&nbsp;</a>
-              <span class="overlay">&nbsp;</span>
-            </div>
-            <h3><span class="flag fi"></span>Henri Bergius</h3>
-            <h4>Hacker and an occasional adventurer</h4>
+            </li>
 
-            <ul class="tags">
-              <li class="js">JavaScript</li>
-            </ul>
+            <li class="speaker">
 
-          </li>
+              <div class="img">
+                <span class="go"><a href="http://twitter.com/asolovyov" class="twitter">&nbsp;</a></span>
+                <a class="face" style="background-image: url(assets/speakers/alexander-solovyov.jpg)">&nbsp;</a>
+                <span class="overlay">&nbsp;</span>
+              </div>
+              <h3><span class="flag fi"></span>Alexander Solovyov</h3>
+              <h4>Team Lead at How Far Games</h4>
 
-          <li class="speaker">
+              <ul class="tags">
+                <li class="py">Python</li>
+                <li class="js">JavaScript</li>
+                <li class="go">Go</li>
+                <li class="clj">Clojure</li>
+                <li class="cljs">ClojureScript</li>
+              </ul>
 
-            <div class="img">
-              <span class="go"><a href="http://twitter.com/gar1t" class="twitter">&nbsp;</a></span>
-              <a class="face" style="background-image: url(assets/speakers/garret-smith.jpg)">&nbsp;</a>
-              <span class="overlay">&nbsp;</span>
-            </div>
-            <h3><span class="flag us"></span>Garret Smith</h3>
-            <h4>Programmer-In-Anger at CloudBees</h4>
+            </li>
 
-            <ul class="tags">
-              <li class="js">Python</li>
-              <li class="el">Erlang</li>
-              <li class="c">C/C++</li>
-            </ul>
+            <li class="speaker">
 
-          </li>
+              <div class="img">
+                <span class="go"><a href="http://twitter.com/snoyberg" class="twitter">&nbsp;</a></span>
+                <a class="face" style="background-image: url(assets/speakers/michael-snoyman.jpg)">&nbsp;</a>
+                <span class="overlay">&nbsp;</span>
+              </div>
+              <h3><span class="flag fi"></span>Michael Snoyman</h3>
+              <h4>Lead Software Engineer at FP Complete</h4>
 
-          <li class="speaker">
+              <ul class="tags">
+                <li class="hs">Haskell</li>
+              </ul>
 
-            <div class="img">
-              <span class="go"><a href="http://twitter.com/corbett" class="twitter">&nbsp;</a></span>
-              <a class="face" style="background-image: url(assets/speakers/christine-corbett-moran.jpg)">&nbsp;</a>
-              <span class="overlay">&nbsp;</span>
-            </div>
-            <h3><span class="flag us"></span>Christine Corbett Moran</h3>
-            <h4>CTO Circle of 6; Lead Dev Open WhisperSystems</h4>
+            </li>
 
-            <ul class="tags">
-              <li class="js">Python</li>
-              <li class="c">C/C++</li>
-              <li class="el">Objective C</li>
-            </ul>
-
-          </li>
-
-          <li class="speaker">
-
-            <div class="img">
-              <span class="go"><a href="http://twitter.com/asolovyov" class="twitter">&nbsp;</a></span>
-              <a class="face" style="background-image: url(assets/speakers/alexander-solovyov.jpg)">&nbsp;</a>
-              <span class="overlay">&nbsp;</span>
-            </div>
-            <h3><span class="flag fi"></span>Alexander Solovyov</h3>
-            <h4>Team Lead at How Far Games</h4>
-
-            <ul class="tags">
-              <li class="py">Python</li>
-              <li class="js">JavaScript</li>
-              <li class="go">Go</li>
-              <li class="clj">Clojure</li>
-              <li class="cljs">ClojureScript</li>
-            </ul>
-
-          </li>
-
-          <li class="speaker">
-
-            <div class="img">
-              <span class="go"><a href="http://twitter.com/snoyberg" class="twitter">&nbsp;</a></span>
-              <a class="face" style="background-image: url(assets/speakers/michael-snoyman.jpg)">&nbsp;</a>
-              <span class="overlay">&nbsp;</span>
-            </div>
-            <h3><span class="flag fi"></span>Michael Snoyman</h3>
-            <h4>Lead Software Engineer at FP Complete</h4>
-
-            <ul class="tags">
-              <li class="hs">Haskell</li>
-            </ul>
-
-          </li>
-
-          <li class="tba speaker"><div class="img">&nbsp;</div></li>
-          <li class="tba speaker"><div class="img">&nbsp;</div></li>
-          <li class="short tba speaker"><div class="img">&nbsp;</div></li>
-          <li class="short tba speaker"><div class="img">&nbsp;</div></li>
-          <li class="short tba speaker"><div class="img">&nbsp;</div></li>
-          <li class="short tba speaker"><div class="img">&nbsp;</div></li>
-          <li class="short tba speaker"><div class="img">&nbsp;</div></li>
+            <li class="tba speaker"><div class="img">&nbsp;</div></li>
+            <li class="tba speaker"><div class="img">&nbsp;</div></li>
+            <li class="short tba speaker"><div class="img">&nbsp;</div></li>
+            <li class="short tba speaker"><div class="img">&nbsp;</div></li>
+            <li class="short tba speaker"><div class="img">&nbsp;</div></li>
+            <li class="short tba speaker"><div class="img">&nbsp;</div></li>
+            <li class="short tba speaker"><div class="img">&nbsp;</div></li>
 
           </ul>
 
-        </div></div>
+      </div></div>
 
     </section>
 
     <section id="tickets" class="dark">
 
-        <div class="container">
+      <div class="container">
 
-          <h1 class="text-center">Tickets</h1>
-          <p class="intro text-center">PolyConf tickets will be sold in four batches:</p>
+        <h1 class="text-center">Tickets</h1>
+        <p class="intro text-center">PolyConf tickets will be sold in four batches:</p>
 
-            <ul class="batches-and-prices">
+        <ul class="batches-and-prices">
 
-        <li class="current batch">
+          <li class="current batch">
             <h4>Early Bird</h4>
             <div class="price">XXX<small>EUR</small></div>
             <p class="dates text-center">Wednesday, July 18<br>10am CEST</p>
             <a class="button" href="#">Buy tickets</a>
-        </li>
+          </li>
 
-        <li class="future batch">
-          <h4>Regular (1st)</h4>
-          <div class="price">XXX<small>EUR</small></div>
-          <p class="dates text-center">Tuesday July 24<br>10am CEST</p>
-        </li>
+          <li class="future batch">
+            <h4>Regular (1st)</h4>
+            <div class="price">XXX<small>EUR</small></div>
+            <p class="dates text-center">Tuesday July 24<br>10am CEST</p>
+          </li>
 
-        <li class="future batch">
-          <h4>Regular (2st)</h4>
-          <div class="price">XXX<small>EUR</small></div>
-          <p class="dates text-center">Tuesday, July 30<br>10am CEST</p>
-        </li>
+          <li class="future batch">
+            <h4>Regular (2st)</h4>
+            <div class="price">XXX<small>EUR</small></div>
+            <p class="dates text-center">Tuesday, July 30<br>10am CEST</p>
+          </li>
 
-        <li class="future batch">
-          <h4>Late Bird</h4>
-          <div class="price">XXX<small>EUR</small></div>
-          <p class="dates text-center">Tuesday, August 15<br>10am CEST</p>
-        </li>
+          <li class="future batch">
+            <h4>Late Bird</h4>
+            <div class="price">XXX<small>EUR</small></div>
+            <p class="dates text-center">Tuesday, August 15<br>10am CEST</p>
+          </li>
 
-      </ul>
-
-      <div class="text-center included">
-        <h3>Ticket includes the following things:</h3>
-        <ul>
-          <li>Entry to the conference on October 30/31.</li>
-          <li>Entry to the opening and closing parties on the October 30 and 31.</li>
-          <li>Access to satelite events and many opportunities to connect with people.</li>
-          <li>Breakfast. </li>
-          <li>Lunch</li>
         </ul>
 
-        <p>Tickets will be sold using X.</p>
-      </div>
+        <div class="text-center included">
+          <h3>Ticket includes the following things:</h3>
+          <ul>
+            <li>Entry to the conference on October 30/31.</li>
+            <li>Entry to the opening and closing parties on the October 30 and 31.</li>
+            <li>Access to satelite events and many opportunities to connect with people.</li>
+            <li>Breakfast. </li>
+            <li>Lunch</li>
+          </ul>
 
-<!--
-      <div class="buy-a-ticket text-center">
-        <a href="#" class="button large white">Submit a proposal</a>
-      </div>
--->
+          <p>Tickets will be sold using X.</p>
+        </div>
+
+        <!--
+        <div class="buy-a-ticket text-center">
+          <a href="#" class="button large white">Submit a proposal</a>
+        </div>
+        -->
 
 
 
@@ -447,7 +446,7 @@
 
       <div id="map">
 
-<iframe src="https://mapsengine.google.com/map/embed?mid=zLCKvjx_4Iuw.kJ-k36etYlSg"></iframe>
+        <iframe src="https://mapsengine.google.com/map/embed?mid=zLCKvjx_4Iuw.kJ-k36etYlSg"></iframe>
 
       </div>
 
@@ -498,289 +497,288 @@
               <li><a href="#">Book hotel</a></li>
             </ul>
 
-        </div>
-
-          <div class="hotel">
-
-            <h3>Name of the Hotel</h3>
-            <p class="address">ul. Niepodległości 123/45, Poznań</p>
-            <h4>Prices per night with discount</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td class="room">Single</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-                <tr>
-                  <td class="room">Double</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-                <tr>
-                  <td class="room">Triple</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-              </tbody>
-            </table>
-            <ul class="links">
-              <li><a href="#">Website</a></li>
-              <li><a href="#">Book hotel</a></li>
-            </ul>
-
-        </div>
-          <div class="hotel">
-
-            <h3>Name of the Hotel</h3>
-            <p class="address">ul. Niepodległości 123/45, Poznań</p>
-            <h4>Prices per night with discount</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td class="room">Single</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-                <tr>
-                  <td class="room">Double</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-                <tr>
-                  <td class="room">Triple</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-              </tbody>
-            </table>
-            <ul class="links">
-              <li><a href="#">Website</a></li>
-              <li><a href="#">Book hotel</a></li>
-            </ul>
-
-        </div>
-          <div class="hotel">
-
-            <h3>Name of the Hotel</h3>
-            <p class="address">ul. Niepodległości 123/45, Poznań</p>
-            <h4>Prices per night with discount</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td class="room">Single</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-                <tr>
-                  <td class="room">Double</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-                <tr>
-                  <td class="room">Triple</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-              </tbody>
-            </table>
-            <ul class="links">
-              <li><a href="#">Website</a></li>
-              <li><a href="#">Book hotel</a></li>
-            </ul>
-
-        </div>
-          <div class="hotel">
-
-            <h3>Name of the Hotel</h3>
-            <p class="address">ul. Niepodległości 123/45, Poznań</p>
-            <h4>Prices per night with discount</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td class="room">Single</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-                <tr>
-                  <td class="room">Double</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-                <tr>
-                  <td class="room">Triple</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-              </tbody>
-            </table>
-            <ul class="links">
-              <li><a href="#">Website</a></li>
-              <li><a href="#">Book hotel</a></li>
-            </ul>
-
-        </div>
-          <div class="hotel">
-
-            <h3>Name of the Hotel</h3>
-            <p class="address">ul. Niepodległości 123/45, Poznań</p>
-            <h4>Prices per night with discount</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td class="room">Single</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-                <tr>
-                  <td class="room">Double</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-                <tr>
-                  <td class="room">Triple</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-              </tbody>
-            </table>
-            <ul class="links">
-              <li><a href="#">Website</a></li>
-              <li><a href="#">Book hotel</a></li>
-            </ul>
-
-        </div>
-          <div class="hotel">
-
-            <h3>Name of the Hotel</h3>
-            <p class="address">ul. Niepodległości 123/45, Poznań</p>
-            <h4>Prices per night with discount</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td class="room">Single</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-                <tr>
-                  <td class="room">Double</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-                <tr>
-                  <td class="room">Triple</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-              </tbody>
-            </table>
-            <ul class="links">
-              <li><a href="#">Website</a></li>
-              <li><a href="#">Book hotel</a></li>
-            </ul>
-
-        </div>
-          <div class="hotel">
-
-            <h3>Name of the Hotel</h3>
-            <p class="address">ul. Niepodległości 123/45, Poznań</p>
-            <h4>Prices per night with discount</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td class="room">Single</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-                <tr>
-                  <td class="room">Double</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-                <tr>
-                  <td class="room">Triple</td>
-                  <td class="price">XXX EUR</td>
-                </tr>
-              </tbody>
-            </table>
-            <ul class="links">
-              <li><a href="#">Website</a></li>
-              <li><a href="#">Book hotel</a></li>
-            </ul>
-
-        </div>
-
-
-      </div>
-
-    </section>
-
-    <section id="terms">
-
-      <div class="container" id="terms-and-conditions">
-
-      <h2 class="text-center">Terms and Conditions</h2>
-      <div class="row">
-        <div class="column">
-
-            <h5><em>1</em>Tickets</h5>
-            <p class="text-small">Cancellations received before September 31 2014 are entitled to a full refund. Cancellations received after March 14, 2014 are non-refundable.</p>
-
-            <p class="text-small">Early Bird tickets are non-refundable.</p>
           </div>
-        <div class="column">
 
-            <h5><em>2</em>Video/Audio Recording</h5>
-            <p class="text-small">All presentations and associated materials are the speakers’ intellectual property. Recording for commercial purposes requires permission from both the organizer and the speaker.</p>
+          <div class="hotel">
 
-            <p class="text-small">By attending the conference, attendees have agreed to allow the organizer to use images, audio, and video recorded content on site for educational and promotional purposes.</p>
+            <h3>Name of the Hotel</h3>
+            <p class="address">ul. Niepodległości 123/45, Poznań</p>
+            <h4>Prices per night with discount</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="room">Single</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+                <tr>
+                  <td class="room">Double</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+                <tr>
+                  <td class="room">Triple</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="links">
+              <li><a href="#">Website</a></li>
+              <li><a href="#">Book hotel</a></li>
+            </ul>
+
           </div>
-        <div class="column">
+          <div class="hotel">
 
-            <h5><em>3</em>Responsability</h5>
-            <p class="text-small">The participant acknowledges that he/she may not engage in damage claims against the Conference Organizers should the holding of the Conference be hindered or prevented by unexpected political or economic events, natural disaster, the non-appearance of speakers, or other reasons that might necessitate a program change.</p>
+            <h3>Name of the Hotel</h3>
+            <p class="address">ul. Niepodległości 123/45, Poznań</p>
+            <h4>Prices per night with discount</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="room">Single</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+                <tr>
+                  <td class="room">Double</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+                <tr>
+                  <td class="room">Triple</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="links">
+              <li><a href="#">Website</a></li>
+              <li><a href="#">Book hotel</a></li>
+            </ul>
 
-            <p class="text-small">Organizers may cancel the event at any time and tickets will be refunded in full without any additional fees.</p>
           </div>
-      </div>
+          <div class="hotel">
 
-      </div>
+            <h3>Name of the Hotel</h3>
+            <p class="address">ul. Niepodległości 123/45, Poznań</p>
+            <h4>Prices per night with discount</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="room">Single</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+                <tr>
+                  <td class="room">Double</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+                <tr>
+                  <td class="room">Triple</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="links">
+              <li><a href="#">Website</a></li>
+              <li><a href="#">Book hotel</a></li>
+            </ul>
 
+          </div>
+          <div class="hotel">
+
+            <h3>Name of the Hotel</h3>
+            <p class="address">ul. Niepodległości 123/45, Poznań</p>
+            <h4>Prices per night with discount</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="room">Single</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+                <tr>
+                  <td class="room">Double</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+                <tr>
+                  <td class="room">Triple</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="links">
+              <li><a href="#">Website</a></li>
+              <li><a href="#">Book hotel</a></li>
+            </ul>
+
+          </div>
+          <div class="hotel">
+
+            <h3>Name of the Hotel</h3>
+            <p class="address">ul. Niepodległości 123/45, Poznań</p>
+            <h4>Prices per night with discount</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="room">Single</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+                <tr>
+                  <td class="room">Double</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+                <tr>
+                  <td class="room">Triple</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="links">
+              <li><a href="#">Website</a></li>
+              <li><a href="#">Book hotel</a></li>
+            </ul>
+
+          </div>
+          <div class="hotel">
+
+            <h3>Name of the Hotel</h3>
+            <p class="address">ul. Niepodległości 123/45, Poznań</p>
+            <h4>Prices per night with discount</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="room">Single</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+                <tr>
+                  <td class="room">Double</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+                <tr>
+                  <td class="room">Triple</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="links">
+              <li><a href="#">Website</a></li>
+              <li><a href="#">Book hotel</a></li>
+            </ul>
+
+          </div>
+          <div class="hotel">
+
+            <h3>Name of the Hotel</h3>
+            <p class="address">ul. Niepodległości 123/45, Poznań</p>
+            <h4>Prices per night with discount</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="room">Single</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+                <tr>
+                  <td class="room">Double</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+                <tr>
+                  <td class="room">Triple</td>
+                  <td class="price">XXX EUR</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="links">
+              <li><a href="#">Website</a></li>
+              <li><a href="#">Book hotel</a></li>
+            </ul>
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+      <section id="terms">
+
+        <div class="container" id="terms-and-conditions">
+
+          <h2 class="text-center">Terms and Conditions</h2>
+          <div class="row">
+            <div class="column">
+
+              <h5><em>1</em>Tickets</h5>
+              <p class="text-small">Cancellations received before September 31 2014 are entitled to a full refund. Cancellations received after March 14, 2014 are non-refundable.</p>
+
+              <p class="text-small">Early Bird tickets are non-refundable.</p>
+            </div>
+            <div class="column">
+
+              <h5><em>2</em>Video/Audio Recording</h5>
+              <p class="text-small">All presentations and associated materials are the speakers’ intellectual property. Recording for commercial purposes requires permission from both the organizer and the speaker.</p>
+
+              <p class="text-small">By attending the conference, attendees have agreed to allow the organizer to use images, audio, and video recorded content on site for educational and promotional purposes.</p>
+            </div>
+            <div class="column">
+
+              <h5><em>3</em>Responsability</h5>
+              <p class="text-small">The participant acknowledges that he/she may not engage in damage claims against the Conference Organizers should the holding of the Conference be hindered or prevented by unexpected political or economic events, natural disaster, the non-appearance of speakers, or other reasons that might necessitate a program change.</p>
+
+              <p class="text-small">Organizers may cancel the event at any time and tickets will be refunded in full without any additional fees.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="container">
+          <div id="code-of-conduct">
+
+            <h2 class="text-center">Code of conduct</h2>
+            <p class="text-small">PolyConf is dedicated to providing a harassment-free conference experience for everyone. We invite you to help us make PolyConf a place that is welcoming and respectful to all participants, so everyone can focus on the conference itself, and the great networking and community richness that can happen when we get together in person. We will do whatever we believe is necessary to ensure that PolyConf is a safe and productive environment for everyone.</p>
+
+            <p class="text-small">Please bring any concerns to the immediate attention of the event staff, or contact our Event Coordinator, Kasia Popek at kasia@polyconf.com. We thank our attendees for their help in keeping the event welcoming, respectful, and friendly to all participants. </p>
+
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+    <footer>
       <div class="container">
-      <div id="code-of-conduct">
 
-        <h2 class="text-center">Code of conduct</h2>
-        <p class="text-small">PolyConf is dedicated to providing a harassment-free conference experience for everyone. We invite you to help us make PolyConf a place that is welcoming and respectful to all participants, so everyone can focus on the conference itself, and the great networking and community richness that can happen when we get together in person. We will do whatever we believe is necessary to ensure that PolyConf is a safe and productive environment for everyone.</p>
+        <div class="about-us">
 
-        <p class="text-small">Please bring any concerns to the immediate attention of the event staff, or contact our Event Coordinator, Kasia Popek at kasia@polyconf.com. We thank our attendees for their help in keeping the event welcoming, respectful, and friendly to all participants. </p>
+          <h4>About us</h4>
+          <p>Come to Poznan, Poland in October 2014 to meet programmers interested in polyglot software development. Lets talk about future&nbsp;of&nbsp;Computer Science!</p>
+          <p class="copy">&copy; Copyright by Polyconf, 2014 &nbsp;&nbsp;&nbsp; www by <a href="http://www.true.pl">true.pl</a> &nbsp;&nbsp;&nbsp; icons by <a href="http://icons8.com">Icons8</a></p>
 
-      </div>
-      </div>
+        </div>
 
-    </section>
+        <div class="learn-more">
 
-  </div>
-<footer>
-  <div class="container">
+          <h4>Learn more</h4>
 
-    <div class="about-us">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#venue">Venue</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+          </ul>
 
-      <h4>About us</h4>
-      <p>Come to Poznan, Poland in October 2014 to meet programmers interested in polyglot software development. Lets talk about future&nbsp;of&nbsp;Computer Science!</p>
-      <p class="copy">&copy; Copyright by Polyconf, 2014 &nbsp;&nbsp;&nbsp; www by <a href="http://www.true.pl">true.pl</a> &nbsp;&nbsp;&nbsp; icons by <a href="http://icons8.com">Icons8</a></p>
+        </div>
 
-    </div>
+        <div class="stay-connected">
 
-    <div class="learn-more">
+          <h4>Stay connected</h4>
 
-      <h4>Learn more</h4>
+          <ul>
+            <li><a href="http://twitter.com/polyconfhq" class="twitter">Read all news on Twitter</a></li>
+            <li><a href="http://facebook.com/polyconf" class="facebook">Be our friend on Facebook</a></li>
+          </ul>
 
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#speakers">Speakers</a></li>
-          <li><a href="#agenda">Agenda</a></li>
-          <li><a href="#venue">Venue</a></li>
-          <li><a href="#sponsors">Sponsors</a></li>
-        </ul>
+        </div>
 
       </div>
 
-    <div class="stay-connected">
+    </footer>
 
-      <h4>Stay connected</h4>
-
-      <ul>
-        <li><a href="http://twitter.com/polyconfhq" class="twitter">Read all news on Twitter</a></li>
-        <li><a href="http://facebook.com/polyconf" class="facebook">Be our friend on Facebook</a></li>
-      </ul>
-
-    </div>
-
-  </div>
-
-</footer>
-
-
-</body>
+  </body>
 
 </html>
