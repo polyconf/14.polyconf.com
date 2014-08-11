@@ -239,7 +239,7 @@ body {
   color: #fff; }
 
 .container {
-  max-width: 77.5em;
+  max-width: 73.75em;
   margin-left: auto;
   margin-right: auto; }
   .container:after {
@@ -536,8 +536,8 @@ header {
   #stats .number {
     float: left;
     display: block;
-    margin-right: 1.69492%;
-    width: 18.64407%;
+    margin-right: 1.0101%;
+    width: 19.19192%;
     text-align: center; }
     #stats .number:last-child {
       margin-right: 0; }
@@ -558,7 +558,7 @@ header {
         background-image: url(../img/icons/today-512.png); }
       @media screen and (min-width: 40em) and (max-width: 63.9375em) {
         #stats .number.days {
-          margin-left: 5.08475%; } }
+          margin-left: 5.05051%; } }
     #stats .number.attendees {
       margin-top: 100px; }
       #stats .number.attendees figure {
@@ -573,14 +573,14 @@ header {
         background-image: url(../img/icons/system_report-512.png); }
       @media screen and (min-width: 40em) and (max-width: 63.9375em) {
         #stats .number.workshops {
-          margin-left: 17.14286%; } }
+          margin-left: 16.94915%; } }
     #stats .number.parties {
       margin-top: 160px; }
       #stats .number.parties figure {
         background-image: url(../img/icons/beer-512.png); }
       @media screen and (min-width: 40em) and (max-width: 63.9375em) {
         #stats .number.parties {
-          margin-left: 8.57143%; } }
+          margin-left: 8.47458%; } }
     #stats .number .big {
       display: block;
       font-size: 48px;
@@ -589,8 +589,8 @@ header {
       #stats .number {
         float: left;
         display: block;
-        margin-right: 1.69492%;
-        width: 28.81356%;
+        margin-right: 1.0101%;
+        width: 29.29293%;
         margin-top: 0px !important; }
         #stats .number:last-child {
           margin-right: 0; }
@@ -602,8 +602,8 @@ header {
       #stats .number {
         float: left;
         display: block;
-        margin-right: 1.69492%;
-        width: 49.15254%;
+        margin-right: 1.0101%;
+        width: 49.49495%;
         margin-top: -100px !important; }
         #stats .number:last-child {
           margin-right: 0; }
@@ -613,7 +613,7 @@ header {
           clear: left; } }
     @media screen and (max-width: 40em) {
       #stats .number:nth-child(2n) {
-        margin-left: 50.84746%; } }
+        margin-left: 50.50505%; } }
 
 /* SPEAKERS */
 #speakers {
@@ -638,8 +638,8 @@ header {
       #speakers .speaker-list .speaker {
         float: left;
         display: block;
-        margin-right: 1.69492%;
-        width: 18.64407%; }
+        margin-right: 1.0101%;
+        width: 19.19192%; }
         #speakers .speaker-list .speaker:last-child {
           margin-right: 0; }
         #speakers .speaker-list .speaker:nth-child(5n) {
@@ -650,8 +650,8 @@ header {
       #speakers .speaker-list .speaker {
         float: left;
         display: block;
-        margin-right: 2.85714%;
-        width: 31.42857%; }
+        margin-right: 1.69492%;
+        width: 32.20339%; }
         #speakers .speaker-list .speaker:last-child {
           margin-right: 0; }
         #speakers .speaker-list .speaker:nth-child(3n) {
@@ -662,8 +662,8 @@ header {
       #speakers .speaker-list .speaker {
         float: left;
         display: block;
-        margin-right: 2.85714%;
-        width: 31.42857%; }
+        margin-right: 1.69492%;
+        width: 32.20339%; }
         #speakers .speaker-list .speaker:last-child {
           margin-right: 0; }
         #speakers .speaker-list .speaker:nth-child(3n) {
@@ -685,6 +685,7 @@ header {
       #speakers .speaker-list .speaker .img a.face {
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
         position: absolute;
         top: 0;
         right: 0;
@@ -764,8 +765,8 @@ header {
     #tickets .batches-and-prices li {
       float: left;
       display: block;
-      margin-right: 1.69492%;
-      width: 23.72881%;
+      margin-right: 1.0101%;
+      width: 24.24242%;
       border: 3px solid #fff;
       text-align: center; }
       #tickets .batches-and-prices li:last-child {
@@ -849,8 +850,8 @@ header {
     #call .steps > li {
       float: left;
       display: block;
-      margin-right: 1.69492%;
-      width: 18.64407%;
+      margin-right: 1.0101%;
+      width: 19.19192%;
       min-height: 150px;
       text-align: center; }
       #call .steps > li:last-child {
@@ -882,16 +883,6 @@ header {
       -webkit-box-shadow: 0px 2px 0px #075c2b, inset 0 2px 0px #fff;
       -moz-box-shadow: 0px 2px 0px #075c2b, inset 0 2px 0px #fff;
       box-shadow: 0px 2px 0px #075c2b, inset 0 2px 0px #fff; }
-
-#agenda {
-  padding: 100px 0; }
-
-#agenda .awesome.big.tba {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  color: rgba(0, 0, 0, 0.05);
-  font-size: 10em;
-  line-height: 2em;
-  text-align: center; }
 
 #poznan {
   background: url(../img/poznan.jpg) no-repeat center;
@@ -961,8 +952,8 @@ header {
         #hotels .row .hotel {
           float: left;
           display: block;
-          margin-right: 1.69492%;
-          width: 28.81356%; }
+          margin-right: 1.0101%;
+          width: 29.29293%; }
           #hotels .row .hotel:last-child {
             margin-right: 0; }
           #hotels .row .hotel:nth-child(3n) {
@@ -970,13 +961,13 @@ header {
           #hotels .row .hotel:nth-child(3n+1) {
             clear: left; }
           #hotels .row .hotel:nth-child(3n+2), #hotels .row .hotel:nth-child(3n+3) {
-            margin-left: 5.08475%; } }
+            margin-left: 5.05051%; } }
       @media screen and (min-width: 64em) and (max-width: 77.5em) {
         #hotels .row .hotel {
           float: left;
           display: block;
-          margin-right: 2.85714%;
-          width: 31.42857%; }
+          margin-right: 1.69492%;
+          width: 32.20339%; }
           #hotels .row .hotel:last-child {
             margin-right: 0; }
           #hotels .row .hotel:nth-child(3n) {
@@ -987,8 +978,8 @@ header {
         #hotels .row .hotel {
           float: left;
           display: block;
-          margin-right: 2.85714%;
-          width: 48.57143%; }
+          margin-right: 1.69492%;
+          width: 49.15254%; }
           #hotels .row .hotel:last-child {
             margin-right: 0; }
           #hotels .row .hotel:nth-child(2n) {
@@ -1030,21 +1021,21 @@ header {
       #terms .row .column {
         float: left;
         display: block;
-        margin-right: 1.69492%;
-        width: 28.81356%; }
+        margin-right: 1.0101%;
+        width: 29.29293%; }
         #terms .row .column:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 64em) and (max-width: 77.5em) {
       #terms .row .column {
         float: left;
         display: block;
-        margin-right: 2.85714%;
-        width: 31.42857%; }
+        margin-right: 1.69492%;
+        width: 32.20339%; }
         #terms .row .column:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 77.5em) {
       #terms .row .column:first-of-type {
-        margin-left: 8.57143%; } }
+        margin-left: 8.47458%; } }
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
       #terms .row .column {
         width: 100%; } }
@@ -1100,8 +1091,8 @@ footer {
   footer .container div.about-us {
     float: left;
     display: block;
-    margin-right: 9.09091%;
-    width: 45.45455%; }
+    margin-right: 5.26316%;
+    width: 47.36842%; }
     footer .container div.about-us:last-child {
       margin-right: 0; }
     @media screen and (max-width: 40em) {
@@ -1112,8 +1103,8 @@ footer {
   footer .container div.stay-connected {
     float: left;
     display: block;
-    margin-right: 9.09091%;
-    width: 18.18182%; }
+    margin-right: 5.26316%;
+    width: 21.05263%; }
     footer .container div.learn-more:last-child,
     footer .container div.stay-connected:last-child {
       margin-right: 0; }
@@ -1139,3 +1130,190 @@ footer {
     color: #0bc1e5; }
     footer a:hover {
       color: #77e3f8; }
+
+#sponsors {
+  padding: 100px 0; }
+  #sponsors .sponsors, #sponsors .supporters {
+    display: block;
+    padding: 0 0 40px; }
+    #sponsors .sponsors:after, #sponsors .supporters:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #sponsors .sponsors h2, #sponsors .supporters h2 {
+      text-align: center;
+      margin-bottom: 30px; }
+    #sponsors .sponsors .platinum.sponsor .logo-container, #sponsors .supporters .platinum.sponsor .logo-container {
+      padding: 20px;
+      float: left;
+      display: block;
+      margin-right: 1.1236%;
+      width: 32.58427%; }
+      #sponsors .sponsors .platinum.sponsor .logo-container:last-child, #sponsors .supporters .platinum.sponsor .logo-container:last-child {
+        margin-right: 0; }
+      #sponsors .sponsors .platinum.sponsor .logo-container .logo, #sponsors .supporters .platinum.sponsor .logo-container .logo {
+        display: block;
+        width: 100%;
+        position: relative;
+        margin-bottom: 1em;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain; }
+        #sponsors .sponsors .platinum.sponsor .logo-container .logo:before, #sponsors .supporters .platinum.sponsor .logo-container .logo:before {
+          content: "";
+          display: block;
+          padding-top: 70%; }
+    #sponsors .sponsors .platinum.sponsor .description, #sponsors .supporters .platinum.sponsor .description {
+      padding: 20px;
+      float: left;
+      display: block;
+      margin-right: 1.1236%;
+      width: 66.29213%; }
+      #sponsors .sponsors .platinum.sponsor .description:last-child, #sponsors .supporters .platinum.sponsor .description:last-child {
+        margin-right: 0; }
+      #sponsors .sponsors .platinum.sponsor .description h3, #sponsors .supporters .platinum.sponsor .description h3 {
+        font-size: 18px;
+        margin-bottom: 18px; }
+      #sponsors .sponsors .platinum.sponsor .description p, #sponsors .supporters .platinum.sponsor .description p {
+        font-size: 12px; }
+    #sponsors .sponsors .gold.sponsor, #sponsors .supporters .gold.sponsor {
+      float: left;
+      display: block;
+      margin-right: 1.1236%;
+      width: 32.58427%;
+      padding: 20px; }
+      #sponsors .sponsors .gold.sponsor:last-child, #sponsors .supporters .gold.sponsor:last-child {
+        margin-right: 0; }
+      #sponsors .sponsors .gold.sponsor .logo, #sponsors .supporters .gold.sponsor .logo {
+        display: block;
+        width: 100%;
+        position: relative;
+        margin-bottom: 1em;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain; }
+        #sponsors .sponsors .gold.sponsor .logo:before, #sponsors .supporters .gold.sponsor .logo:before {
+          content: "";
+          display: block;
+          padding-top: 50%; }
+      #sponsors .sponsors .gold.sponsor h3, #sponsors .supporters .gold.sponsor h3 {
+        font-size: 18px;
+        margin-bottom: 18px; }
+      #sponsors .sponsors .gold.sponsor p, #sponsors .supporters .gold.sponsor p {
+        font-size: 12px; }
+    #sponsors .sponsors .silver.sponsor,
+    #sponsors .sponsors .bronze.sponsor, #sponsors .supporters .silver.sponsor,
+    #sponsors .supporters .bronze.sponsor {
+      float: left;
+      display: block;
+      margin-right: 1.0101%;
+      width: 19.19192%;
+      padding: 10px; }
+      #sponsors .sponsors .silver.sponsor:last-child,
+      #sponsors .sponsors .bronze.sponsor:last-child, #sponsors .supporters .silver.sponsor:last-child,
+      #sponsors .supporters .bronze.sponsor:last-child {
+        margin-right: 0; }
+      #sponsors .sponsors .silver.sponsor .logo,
+      #sponsors .sponsors .bronze.sponsor .logo, #sponsors .supporters .silver.sponsor .logo,
+      #sponsors .supporters .bronze.sponsor .logo {
+        display: block;
+        width: 100%;
+        position: relative;
+        margin-bottom: 1em;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../img/sponsor-tba.png); }
+        #sponsors .sponsors .silver.sponsor .logo:before,
+        #sponsors .sponsors .bronze.sponsor .logo:before, #sponsors .supporters .silver.sponsor .logo:before,
+        #sponsors .supporters .bronze.sponsor .logo:before {
+          content: "";
+          display: block;
+          padding-top: 70%; }
+    #sponsors .sponsors .supporter, #sponsors .supporters .supporter {
+      float: left;
+      display: block;
+      margin-right: 1.0101%;
+      width: 19.19192%;
+      padding: 10px; }
+      #sponsors .sponsors .supporter:last-child, #sponsors .supporters .supporter:last-child {
+        margin-right: 0; }
+      #sponsors .sponsors .supporter .logo, #sponsors .supporters .supporter .logo {
+        display: block;
+        width: 100%;
+        position: relative;
+        margin-bottom: 1em;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../img/sponsor-tba.png); }
+        #sponsors .sponsors .supporter .logo:before, #sponsors .supporters .supporter .logo:before {
+          content: "";
+          display: block;
+          padding-top: 50%; }
+
+#agenda {
+  padding: 100px 0; }
+  #agenda .row {
+    display: block; }
+    #agenda .row:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #agenda .row .day {
+      float: left;
+      display: block;
+      margin-right: 1.0101%;
+      width: 49.49495%;
+      padding: 20px; }
+      #agenda .row .day:last-child {
+        margin-right: 0; }
+  #agenda .event-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    display: table;
+    width: 100%; }
+    #agenda .event-list .event {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+      border-bottom: 1px solid #ccc; }
+      #agenda .event-list .event:after {
+        content: "";
+        display: table;
+        clear: both; }
+      #agenda .event-list .event > div {
+        padding: 10px 0;
+        vertical-align: top; }
+        #agenda .event-list .event > div.time {
+          display: table-cell;
+          width: 30%;
+          width: 150px;
+          padding-right: 20px;
+          text-align: right;
+          font-size: 1em;
+          line-height: 1.625em;
+          font-weight: 300; }
+        #agenda .event-list .event > div.name {
+          display: table-cell;
+          width: 70%; }
+          #agenda .event-list .event > div.name span.title {
+            display: block;
+            font-size: 1.25em;
+            line-height: 1.25em; }
+          #agenda .event-list .event > div.name span.person {
+            font-size: 0.875em;
+            display: block;
+            color: #666; }
+          #agenda .event-list .event > div.name span.tags span.tag {
+            display: inline-block;
+            background: #666;
+            color: #fff;
+            font-size: 0.6875em;
+            line-height: 0.75em;
+            font-weight: 500;
+            padding: 4px 4px;
+            text-transform: uppercase; }
