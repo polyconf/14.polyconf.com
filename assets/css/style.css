@@ -1469,10 +1469,14 @@ footer {
         content: "";
         display: table;
         clear: both; }
-      #agenda .event-list .event > div {
+      #agenda .event-list .event label {
+        font-weight: normal;
+        margin: auto;
+      }
+      #agenda .event-list .event > div, #agenda .event-list .event label > div {
         padding: 10px 0;
         vertical-align: top; }
-        #agenda .event-list .event > div.time {
+        #agenda .event-list .event > div.time, #agenda .event-list .event label > div.time {
           display: table-cell;
           width: 30%;
           width: 150px;
@@ -1481,18 +1485,18 @@ footer {
           font-size: 1em;
           line-height: 1.625em;
           font-weight: 300; }
-        #agenda .event-list .event > div.name {
+        #agenda .event-list .event > div.name, #agenda .event-list .event label > div.name {
           display: table-cell;
           width: 70%; }
-          #agenda .event-list .event > div.name span.title {
+          #agenda .event-list .event > div.name span.title, #agenda .event-list .event label > div.name span.title {
             display: block;
             font-size: 1.25em;
             line-height: 1.25em; }
-          #agenda .event-list .event > div.name span.person {
+          #agenda .event-list .event > div.name span.person, #agenda .event-list .event label > div.name span.person {
             font-size: 0.875em;
             display: block;
             color: #666; }
-          #agenda .event-list .event > div.name span.tags span.tag {
+          #agenda .event-list .event > div.name span.tags span.tag, #agenda .event-list .event label > div.name span.tags span.tag {
             display: inline-block;
             background: #666;
             color: #fff;
@@ -1501,3 +1505,6 @@ footer {
             font-weight: 500;
             padding: 4px 4px;
             text-transform: uppercase; }
+      #agenda .event-list .event div.modal {
+        padding: 0;
+      }
