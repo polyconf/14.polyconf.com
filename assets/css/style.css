@@ -1478,7 +1478,6 @@ footer {
         vertical-align: top; }
         #agenda .event-list .event > div.time, #agenda .event-list .event label > div.time {
           display: table-cell;
-          width: 30%;
           width: 150px;
           padding-right: 20px;
           text-align: right;
@@ -1486,8 +1485,7 @@ footer {
           line-height: 1.625em;
           font-weight: 300; }
         #agenda .event-list .event > div.name, #agenda .event-list .event label > div.name {
-          display: table-cell;
-          width: 70%; }
+          display: table-cell; }
           #agenda .event-list .event > div.name span.title, #agenda .event-list .event label > div.name span.title {
             display: block;
             font-size: 1.25em;
