@@ -680,6 +680,8 @@ header {
         right: 0;
         bottom: 0;
         left: 0; }
+      #speakers .speaker-list .speaker .img .overlay:hover {
+        cursor: pointer; }
       #speakers .speaker-list .speaker .img .overlay {
         background: url(../img/speaker-bg.png) no-repeat left bottom;
         position: absolute;
@@ -1473,6 +1475,8 @@ footer {
         font-weight: normal;
         margin: auto;
       }
+      #agenda .event-list .event label:hover {
+        cursor: pointer; }
       #agenda .event-list .event > div, #agenda .event-list .event label > div {
         padding: 10px 0;
         vertical-align: top; }
