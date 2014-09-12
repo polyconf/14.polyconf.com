@@ -960,9 +960,6 @@ header {
       bottom: 0;
       right: 0; }
 
-#venue {
-  display: none; }
-
 #hotels {
   padding: 100px 0;
   background: #516570; }
@@ -1510,3 +1507,84 @@ footer {
       #agenda .event-list .event div.modal {
         padding: 0;
       }
+
+#venue {
+  background: #313d44;
+}
+
+#venue .container {
+}
+
+#venue #map {
+  position: relative;
+  height: 500px;
+  background: #000;
+  margin-top: 100px;
+}
+
+#venue #map iframe {
+  width: 100%;
+  height: 500px;
+}
+
+#venue .hotels {
+  padding-top: 100px;
+}
+
+#venue .hotels .hotel {
+  font-size: 1em;
+}
+
+#venue .hotels .hotel h3 {
+  color: #fff;
+  font-size: 1.3em;
+  line-height: 1.2em;
+  margin: 1em 0 0.25em;
+}
+
+#venue .hotels .hotel p.prices-header {
+  color: #fff;
+  font-size: 0.75em;
+  line-height: 1.2em;
+  margin: 1em 0;
+}
+
+
+#venue .hotels .hotel p.address {
+  font-size: 0.75em;
+}
+
+#venue .hotels .hotel table,
+#venue .hotels .hotel table tr.even,
+#venue .hotels .hotel table tr.alt,
+#venue .hotels .hotel table tr:nth-of-type(even) {
+  background: transparent;
+}
+
+#venue .hotels .hotel table {
+  border: 1px solid rgba(255,255,255,0.2);
+  min-width: 80%;
+}
+
+#venue .hotels .hotel table td {
+  border-bottom: 1px solid rgba(255,255,255,0.1);;
+  color: #ccc;
+  font-size: 0.8em;
+  padding: 0.4em 0.5em;
+}
+
+#venue .hotels .hotel table td:last-child {
+  text-align: right;
+}
+
+#venue .hotels .hotel table tr:last-child td {
+  border-bottom: none;
+}
+
+#venue .awesome.big.tba {
+  font-family: Nexa;
+  color: rgba(255,255,255,0.05);
+  font-size: 10em;
+  line-height: 2em;
+  text-align: center;
+}
