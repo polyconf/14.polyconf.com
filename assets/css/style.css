@@ -1160,6 +1160,7 @@ footer {
   padding: 100px 0; }
   #sponsors .sponsors, #sponsors .supporters {
     display: block;
+    text-align: center;
     padding: 0 0 40px; }
     #sponsors .sponsors:after, #sponsors .supporters:after {
       content: "";
@@ -1256,11 +1257,11 @@ footer {
           display: block;
           padding-top: 70%; }
     #sponsors .sponsors .supporter, #sponsors .supporters .supporter {
-      float: left;
-      display: block;
-      margin-right: 1.0101%;
+      display: inline-block;
       width: 19.19192%;
       padding: 10px; }
+    #sponsors .sponsors .supporter:nth-child(5n), #sponsors .supporters .supporter:nth-child(5n) {
+      margin-right: 0; }
       #sponsors .sponsors .supporter:last-child, #sponsors .supporters .supporter:last-child {
         margin-right: 0; }
       #sponsors .sponsors .supporter .logo, #sponsors .supporters .supporter .logo {
