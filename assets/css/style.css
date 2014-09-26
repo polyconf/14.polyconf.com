@@ -1203,13 +1203,10 @@ footer {
       #sponsors .sponsors .platinum.sponsor .description p, #sponsors .supporters .platinum.sponsor .description p {
         font-size: 12px; }
     #sponsors .sponsors .gold.sponsor, #sponsors .supporters .gold.sponsor {
-      float: left;
-      display: block;
-      margin-right: 1.1236%;
+      margin: auto;
+      display: inline-block;
       width: 32.58427%;
       padding: 20px; }
-      #sponsors .sponsors .gold.sponsor:last-child, #sponsors .supporters .gold.sponsor:last-child {
-        margin-right: 0; }
       #sponsors .sponsors .gold.sponsor .logo, #sponsors .supporters .gold.sponsor .logo {
         display: block;
         width: 100%;
@@ -1230,15 +1227,10 @@ footer {
     #sponsors .sponsors .silver.sponsor,
     #sponsors .sponsors .bronze.sponsor, #sponsors .supporters .silver.sponsor,
     #sponsors .supporters .bronze.sponsor {
-      float: left;
-      display: block;
-      margin-right: 1.0101%;
+      display: inline-block;
       width: 19.19192%;
+      margin: auto;
       padding: 10px; }
-      #sponsors .sponsors .silver.sponsor:last-child,
-      #sponsors .sponsors .bronze.sponsor:last-child, #sponsors .supporters .silver.sponsor:last-child,
-      #sponsors .supporters .bronze.sponsor:last-child {
-        margin-right: 0; }
       #sponsors .sponsors .silver.sponsor .logo,
       #sponsors .sponsors .bronze.sponsor .logo, #sponsors .supporters .silver.sponsor .logo,
       #sponsors .supporters .bronze.sponsor .logo {
