@@ -1,7 +1,5 @@
 #sponsors .silver.sponsor {
-  float: left;
-  display: block;
-  margin-right: 1.0101%;
+  display: inline-block;
   width: 24% !important;
   padding: 10px;
 }
