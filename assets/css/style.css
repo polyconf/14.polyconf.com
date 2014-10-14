@@ -235,7 +235,7 @@ body {
 .text-center {
   text-align: center; }
 
-.dark * {
+.dark h3, h4 {
   color: #fff; }
 
 .container {
