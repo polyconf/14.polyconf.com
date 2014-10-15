@@ -3,3 +3,7 @@
   width: 24% !important;
   padding: 10px;
 }
+
+#speakers, #tickets, #venue * {
+  color: #FFF;
+}
