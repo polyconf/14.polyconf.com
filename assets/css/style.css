@@ -705,6 +705,34 @@ header {
           background-size: 20px auto; }
         #speakers .speaker-list .speaker .img .go:hover {
           background: url(../img/speaker-twitter-h.png) no-repeat left bottom; }
+	#speakers .speaker-list .speaker .img .light {
+	  position: absolute;
+	  bottom: 6px;
+	  right: 50px;
+	  z-index: 10000;
+	  width: 32px;
+	  height: 34px;
+	  background: url(../img/lightning.png) no-repeat left bottom; }
+	  #speakers .speaker-list .speaker .img .light em {
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    background: url(../img/lightning.svg) no-repeat center;
+	    background-size: 30px auto; }
+	#speakers .speaker-list .speaker .img .normal {
+	  position: absolute;
+	  bottom: 6px;
+	  right: 50px;
+	  z-index: 10000;
+	  width: 32px;
+	  height: 34px;
+	  background: url(../img/normal.png) no-repeat left bottom; }
+	  #speakers .speaker-list .speaker .img .normal em {
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    background: url(../img/normal.svg) no-repeat center;
+	    background-size: 30px auto; }
     #speakers .speaker-list .speaker h3 {
       margin: 0.5em 0 0.5;
       font-weight: 500;
@@ -1456,7 +1484,9 @@ footer {
       display: table;
       width: 100%;
       table-layout: fixed;
-      border-bottom: 1px solid #ccc; }
+      border-bottom: 1px solid #ccc; 
+      position: relative;
+	}
       #agenda .event-list .event:after {
         content: "";
         display: table;
@@ -1500,6 +1530,45 @@ footer {
       #agenda .event-list .event div.modal {
         padding: 0;
       }
+      
+#agenda .event-list .event .light {
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 28px;
+  height: 28px;
+  background: url(../img/lightning.png) no-repeat center; }
+  #agenda .event-list .event .light em {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../img/lightning.svg) no-repeat center;
+    background-size: 24px auto; }
+#agenda .event-list .event .normal {
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 28px;
+  height: 28px;
+  background: url(../img/normal.png) no-repeat center; }
+  #agenda .event-list .event .normal em {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../img/normal.svg) no-repeat center;
+    background-size: 24px auto; }
 
 #venue {
   background: #313d44;
