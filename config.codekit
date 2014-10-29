@@ -2367,6 +2367,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/speakers\/magdalena-frankiewicz.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 416626,
+		"inputAbbreviatedPath": "\/assets\/speakers\/magdalena-frankiewicz.jpg",
+		"outputAbbreviatedPath": "\/assets\/speakers\/magdalena-frankiewicz.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/speakers\/michael-snoyman.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2440,6 +2451,17 @@
 		"initialSize": 20743,
 		"inputAbbreviatedPath": "\/assets\/speakers\/tomasz-jackowiak.jpg",
 		"outputAbbreviatedPath": "\/assets\/speakers\/tomasz-jackowiak.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/speakers\/ute-mayer.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58020,
+		"inputAbbreviatedPath": "\/assets\/speakers\/ute-mayer.jpg",
+		"outputAbbreviatedPath": "\/assets\/speakers\/ute-mayer.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
