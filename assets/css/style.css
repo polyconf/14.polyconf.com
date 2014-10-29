@@ -989,6 +989,7 @@ header {
       right: 0; }
 
 #hotels {
+  color: #fff;
   padding: 100px 0;
   background: #516570; }
   #hotels .row {
@@ -1484,7 +1485,7 @@ footer {
       display: table;
       width: 100%;
       table-layout: fixed;
-      border-bottom: 1px solid #ccc; 
+      border-bottom: 1px solid #ccc;
       position: relative;
 	}
       #agenda .event-list .event:after {
@@ -1530,7 +1531,7 @@ footer {
       #agenda .event-list .event div.modal {
         padding: 0;
       }
-      
+
 #agenda .event-list .event .light {
   position: absolute;
   left: -4px;
@@ -1575,13 +1576,13 @@ footer {
 }
 
 #venue .container {
+  padding-top: 100px;
 }
 
 #venue #map {
   position: relative;
   height: 500px;
   background: #000;
-  margin-top: 100px;
 }
 
 #venue #map iframe {
