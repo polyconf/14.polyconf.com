@@ -1576,13 +1576,13 @@ footer {
 }
 
 #venue .container {
+  padding-top: 100px;
 }
 
 #venue #map {
   position: relative;
   height: 500px;
   background: #000;
-  margin-top: 100px;
 }
 
 #venue #map iframe {
