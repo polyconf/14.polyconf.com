@@ -28,8 +28,10 @@ body {
 	text-align: center;
 }
 
-.dark * {
-  color: #fff;
+.dark {
+	h3,h4 {
+  	color: #fff;
+  }
 }
 
 .container {
@@ -575,6 +577,9 @@ header {
 					right: 0;
 					bottom: 0;
 					left: 0;
+					&:hover {
+						cursor: pointer;
+					}
 				}
 				
 				.go {
@@ -701,6 +706,34 @@ header {
 	}
 
 }
+
+
+    #speakers .speaker-list .speaker .modal .modal-window .modal-inner {
+      top: 10%;
+      width: 660px;
+    }
+      #speakers .speaker-list .speaker .modal .modal-window .modal-inner p.body {
+        margin-bottom: 50px;
+      }
+    #speakers .speaker-list .speaker .modal .face {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      width: 180px;
+      height: 180px;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    #speakers .speaker-list .speaker .modal .links {
+      position: absolute;
+      right: 20px;
+      bottom: 0;
+    }
+      #speakers .speaker-list .speaker .modal .links a {
+        color: #1390b0;
+        font-size: 50px;
+      }
 
 
 #tickets {
@@ -1041,7 +1074,7 @@ header {
 				  height: 40px;
 				  border: 1px solid #ccc;
 				  border-radius: 100%;
-				  line-height: 41px;
+				  line-height: 37px;
 				  color: #bbb;
 			    font-family: "Raleway";
 				}
@@ -1151,6 +1184,7 @@ footer {
 		.sponsors, .supporters {
 		
 		@include row();
+    text-align: center !important;
 		
 		padding: 0 0 40px;
 		
@@ -1205,6 +1239,13 @@ footer {
 			
 			@include span-columns(6 of 18);
 			padding: 20px;
+			display: inline-block !important;
+			margin: 0 auto;
+			float: none;
+			
+			@include media($mobile) {
+				@include fill-parent();
+			}
 			
 			.logo {
 				
@@ -1240,6 +1281,16 @@ footer {
 			
 			@include span-columns(4);
 			padding: 10px;
+			display: inline-block !important;
+			margin: 0 auto;
+			float: none;
+
+			@include media($mobile) {
+				@include fill-parent();
+				text-align: center;
+				width: 100% !important;
+			}
+
 			
 			.logo {
 				
@@ -1251,6 +1302,11 @@ footer {
 				background-repeat: no-repeat;
 				background-size: contain;
 				background-image: url(sponsor-tba.png);
+			
+				@include media($mobile) {
+					width: 80%;
+					margin: 0 auto 1em;
+				}
 			
 				&:before {
 					content: "";
@@ -1266,6 +1322,14 @@ footer {
 			
 			@include span-columns(4);
 			padding: 10px;
+			display: inline-block !important;
+			margin: 0 auto;
+			float: none;
+
+			@include media($mobile) {
+				@include fill-parent();
+			}
+
 			
 			.logo {
 				
@@ -1282,6 +1346,11 @@ footer {
 					content: "";
 					display: block;
 					padding-top: 50%;
+				}
+				
+				@include media($mobile) {
+					width: 50%;
+					margin: 0 auto 0.5em;
 				}
 				
 			}
@@ -1489,7 +1558,6 @@ footer {
 	  width: 100%;
 
 		.event {
-			@include row(table);
             position: relative;
 			border-bottom: 1px solid #ccc;
 
@@ -1533,29 +1601,52 @@ footer {
               }
 
             }  
+      
+      label {
+	      width: 100%;
+	      display: block;
+				@include row(table);
+				@include media($mobile) {
+					@include row(block);
+				}
+      }
             
-            
-			> div {
+			label > div {
 				padding: 10px 0;
 				vertical-align: top;
 		
 				&.time {
 					@include span-columns(3 of 10);
-					width: 150px;
 					padding-right: 20px;
 					text-align: right;
 					font-size: em(16);
 					line-height: em(26);
 					font-weight: 300;
+					
+					@include media($mobile) {
+						@include fill-parent();
+						text-align: left;
+						padding-left: 50px;
+						padding-bottom: 0 !important;
+					}
+					
 				}
 				
 				&.name {
 					@include span-columns(7 of 10);
 
+					@include media($mobile) {
+						@include fill-parent();
+						text-align: left;
+						padding-left: 50px;
+					}
+
+
 					span.title {
 					  display: block;
 					  font-size: em(20);
 						line-height: em(20);
+						padding-right: 40px;
 					}
 
 					span.person {
@@ -1592,3 +1683,86 @@ footer {
 	}
 	
 }
+
+
+#venue {
+  background: #313d44;
+}
+
+#venue .container {
+}
+
+#venue #map {
+  position: relative;
+  height: 500px;
+  background: #000;
+  margin-top: 100px;
+}
+
+#venue #map iframe {
+  width: 100%;
+  height: 500px;
+}
+
+#venue .hotels {
+  padding-top: 100px;
+}
+
+#venue .hotels .hotel {
+  font-size: 1em;
+}
+
+#venue .hotels .hotel h3 {
+  color: #fff;
+  font-size: 1.3em;
+  line-height: 1.2em;
+  margin: 1em 0 0.25em;
+}
+
+#venue .hotels .hotel p.prices-header {
+  color: #fff;
+  font-size: 0.75em;
+  line-height: 1.2em;
+  margin: 1em 0;
+}
+
+
+#venue .hotels .hotel p.address {
+  font-size: 0.75em;
+}
+
+#venue .hotels .hotel table,
+#venue .hotels .hotel table tr.even,
+#venue .hotels .hotel table tr.alt,
+#venue .hotels .hotel table tr:nth-of-type(even) {
+  background: transparent;
+}
+
+#venue .hotels .hotel table {
+  border: 1px solid rgba(255,255,255,0.2);
+  min-width: 80%;
+}
+
+#venue .hotels .hotel table td {
+  border-bottom: 1px solid rgba(255,255,255,0.1);;
+  color: #ccc;
+  font-size: 0.8em;
+  padding: 0.4em 0.5em;
+}
+
+#venue .hotels .hotel table td:last-child {
+  text-align: right;
+}
+
+#venue .hotels .hotel table tr:last-child td {
+  border-bottom: none;
+}
+
+#venue .awesome.big.tba {
+  font-family: Nexa;
+  color: rgba(255,255,255,0.05);
+  font-size: 10em;
+  line-height: 2em;
+  text-align: center;
+}
+

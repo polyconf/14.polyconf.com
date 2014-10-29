@@ -322,7 +322,7 @@ body {
 .text-center {
   text-align: center; }
 
-.dark * {
+.dark h3, .dark h4 {
   color: #fff; }
 
 .container {
@@ -781,6 +781,8 @@ header {
         right: 0;
         bottom: 0;
         left: 0; }
+        #speakers .speaker-list .speaker .img .overlay:hover {
+          cursor: pointer; }
       #speakers .speaker-list .speaker .img .go {
         position: absolute;
         bottom: 10px;
@@ -863,6 +865,32 @@ header {
       @media screen and (max-width: 40em) {
         #speakers .speaker-list .speaker.tba.short {
           display: none; } }
+
+#speakers .speaker-list .speaker .modal .modal-window .modal-inner {
+  top: 10%;
+  width: 660px; }
+
+#speakers .speaker-list .speaker .modal .modal-window .modal-inner p.body {
+  margin-bottom: 50px; }
+
+#speakers .speaker-list .speaker .modal .face {
+  background-size: cover;
+  background-position: center;
+  display: block;
+  width: 180px;
+  height: 180px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
+#speakers .speaker-list .speaker .modal .links {
+  position: absolute;
+  right: 20px;
+  bottom: 0; }
+
+#speakers .speaker-list .speaker .modal .links a {
+  color: #1390b0;
+  font-size: 50px; }
 
 #tickets {
   padding: 100px 0;
@@ -1164,7 +1192,7 @@ header {
         height: 40px;
         border: 1px solid #ccc;
         border-radius: 100%;
-        line-height: 41px;
+        line-height: 37px;
         color: #bbb;
         font-family: "Raleway"; }
   #terms #code-of-conduct {
@@ -1243,6 +1271,7 @@ footer {
   padding: 100px 0; }
   #sponsors .sponsors, #sponsors .supporters {
     display: block;
+    text-align: center !important;
     padding: 0 0 40px; }
     #sponsors .sponsors:after, #sponsors .supporters:after {
       content: "";
@@ -1289,9 +1318,15 @@ footer {
       display: block;
       margin-right: 1.1235955056%;
       width: 32.5842696629%;
-      padding: 20px; }
+      padding: 20px;
+      display: inline-block !important;
+      margin: 0 auto;
+      float: none; }
       #sponsors .sponsors .gold.sponsor:last-child, #sponsors .supporters .gold.sponsor:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 40em) {
+        #sponsors .sponsors .gold.sponsor, #sponsors .supporters .gold.sponsor {
+          width: 100%; } }
       #sponsors .sponsors .gold.sponsor .logo, #sponsors .supporters .gold.sponsor .logo {
         display: block;
         width: 100%;
@@ -1316,11 +1351,21 @@ footer {
       display: block;
       margin-right: 1.0101010101%;
       width: 19.1919191919%;
-      padding: 10px; }
+      padding: 10px;
+      display: inline-block !important;
+      margin: 0 auto;
+      float: none; }
       #sponsors .sponsors .silver.sponsor:last-child,
       #sponsors .sponsors .bronze.sponsor:last-child, #sponsors .supporters .silver.sponsor:last-child,
       #sponsors .supporters .bronze.sponsor:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 40em) {
+        #sponsors .sponsors .silver.sponsor,
+        #sponsors .sponsors .bronze.sponsor, #sponsors .supporters .silver.sponsor,
+        #sponsors .supporters .bronze.sponsor {
+          width: 100%;
+          text-align: center;
+          width: 100% !important; } }
       #sponsors .sponsors .silver.sponsor .logo,
       #sponsors .sponsors .bronze.sponsor .logo, #sponsors .supporters .silver.sponsor .logo,
       #sponsors .supporters .bronze.sponsor .logo {
@@ -1332,6 +1377,12 @@ footer {
         background-repeat: no-repeat;
         background-size: contain;
         background-image: url(sponsor-tba.png); }
+        @media screen and (max-width: 40em) {
+          #sponsors .sponsors .silver.sponsor .logo,
+          #sponsors .sponsors .bronze.sponsor .logo, #sponsors .supporters .silver.sponsor .logo,
+          #sponsors .supporters .bronze.sponsor .logo {
+            width: 80%;
+            margin: 0 auto 1em; } }
         #sponsors .sponsors .silver.sponsor .logo:before,
         #sponsors .sponsors .bronze.sponsor .logo:before, #sponsors .supporters .silver.sponsor .logo:before,
         #sponsors .supporters .bronze.sponsor .logo:before {
@@ -1343,9 +1394,15 @@ footer {
       display: block;
       margin-right: 1.0101010101%;
       width: 19.1919191919%;
-      padding: 10px; }
+      padding: 10px;
+      display: inline-block !important;
+      margin: 0 auto;
+      float: none; }
       #sponsors .sponsors .supporter:last-child, #sponsors .supporters .supporter:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 40em) {
+        #sponsors .sponsors .supporter, #sponsors .supporters .supporter {
+          width: 100%; } }
       #sponsors .sponsors .supporter .logo, #sponsors .supporters .supporter .logo {
         display: block;
         width: 100%;
@@ -1359,6 +1416,10 @@ footer {
           content: "";
           display: block;
           padding-top: 50%; }
+        @media screen and (max-width: 40em) {
+          #sponsors .sponsors .supporter .logo, #sponsors .supporters .supporter .logo {
+            width: 50%;
+            margin: 0 auto 0.5em; } }
 
 .modal label {
   cursor: pointer;
@@ -1575,9 +1636,6 @@ footer {
     display: table;
     width: 100%; }
     #agenda .event-list .event {
-      display: table;
-      width: 100%;
-      table-layout: fixed;
       position: relative;
       border-bottom: 1px solid #ccc; }
       #agenda .event-list .event .light {
@@ -1618,30 +1676,62 @@ footer {
           height: 100%;
           background: url(../img/normal.svg) no-repeat center;
           background-size: 24px auto; }
-      #agenda .event-list .event > div {
+      #agenda .event-list .event label {
+        width: 100%;
+        display: block;
+        display: table;
+        width: 100%;
+        table-layout: fixed; }
+        @media screen and (max-width: 40em) {
+          #agenda .event-list .event label {
+            display: block; }
+            #agenda .event-list .event label:after {
+              content: "";
+              display: table;
+              clear: both; } }
+      #agenda .event-list .event label > div {
         padding: 10px 0;
         vertical-align: top; }
-        #agenda .event-list .event > div.time {
-          display: table-cell;
-          width: 30%;
-          width: 150px;
+        #agenda .event-list .event label > div.time {
+          float: left;
+          display: block;
+          margin-right: 2.0408163265%;
+          width: 28.5714285714%;
           padding-right: 20px;
           text-align: right;
           font-size: 1em;
           line-height: 1.625em;
           font-weight: 300; }
-        #agenda .event-list .event > div.name {
-          display: table-cell;
-          width: 70%; }
-          #agenda .event-list .event > div.name span.title {
+          #agenda .event-list .event label > div.time:last-child {
+            margin-right: 0; }
+          @media screen and (max-width: 40em) {
+            #agenda .event-list .event label > div.time {
+              width: 100%;
+              text-align: left;
+              padding-left: 50px;
+              padding-bottom: 0 !important; } }
+        #agenda .event-list .event label > div.name {
+          float: left;
+          display: block;
+          margin-right: 2.0408163265%;
+          width: 69.387755102%; }
+          #agenda .event-list .event label > div.name:last-child {
+            margin-right: 0; }
+          @media screen and (max-width: 40em) {
+            #agenda .event-list .event label > div.name {
+              width: 100%;
+              text-align: left;
+              padding-left: 50px; } }
+          #agenda .event-list .event label > div.name span.title {
             display: block;
             font-size: 1.25em;
-            line-height: 1.25em; }
-          #agenda .event-list .event > div.name span.person {
+            line-height: 1.25em;
+            padding-right: 40px; }
+          #agenda .event-list .event label > div.name span.person {
             font-size: 0.875em;
             display: block;
             color: #666; }
-          #agenda .event-list .event > div.name span.tags span.tag {
+          #agenda .event-list .event label > div.name span.tags span.tag {
             display: inline-block;
             background: #666;
             color: #fff;
@@ -1650,3 +1740,66 @@ footer {
             font-weight: 500;
             padding: 4px 4px;
             text-transform: uppercase; }
+
+#venue {
+  background: #313d44; }
+
+#venue #map {
+  position: relative;
+  height: 500px;
+  background: #000;
+  margin-top: 100px; }
+
+#venue #map iframe {
+  width: 100%;
+  height: 500px; }
+
+#venue .hotels {
+  padding-top: 100px; }
+
+#venue .hotels .hotel {
+  font-size: 1em; }
+
+#venue .hotels .hotel h3 {
+  color: #fff;
+  font-size: 1.3em;
+  line-height: 1.2em;
+  margin: 1em 0 0.25em; }
+
+#venue .hotels .hotel p.prices-header {
+  color: #fff;
+  font-size: 0.75em;
+  line-height: 1.2em;
+  margin: 1em 0; }
+
+#venue .hotels .hotel p.address {
+  font-size: 0.75em; }
+
+#venue .hotels .hotel table,
+#venue .hotels .hotel table tr.even,
+#venue .hotels .hotel table tr.alt,
+#venue .hotels .hotel table tr:nth-of-type(even) {
+  background: transparent; }
+
+#venue .hotels .hotel table {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 80%; }
+
+#venue .hotels .hotel table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ccc;
+  font-size: 0.8em;
+  padding: 0.4em 0.5em; }
+
+#venue .hotels .hotel table td:last-child {
+  text-align: right; }
+
+#venue .hotels .hotel table tr:last-child td {
+  border-bottom: none; }
+
+#venue .awesome.big.tba {
+  font-family: Nexa;
+  color: rgba(255, 255, 255, 0.05);
+  font-size: 10em;
+  line-height: 2em;
+  text-align: center; }
