@@ -1,9 +1,3 @@
-@charset "UTF-8";
-/**
- * Disable all deprecation warnings. Defaults to `false`. Set with a `!global` flag.
- *
- * @type Bool
- */
 .button,
 button,
 input[type="submit"] {
@@ -219,92 +213,11 @@ input[type="submit"] {
   padding: .5em 0.75em;
   line-height: 1; }
 
-/* Neat 1.7.0.pre
- * http://neat.bourbon.io
- * Copyright 2012–2014 thoughtbot, inc.
- * MIT License */
-/**
- * Disable all deprecation warnings. Defaults to `false`. Set with a `!global` flag.
- *
- * @type Bool
- */
-html {
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit; }
-
-/**
- * Makes an element a outer container by centring it in the viewport, clearing its floats, and setting its `max-width`.
- *
- * Although optional, using `outer-container` is recommended. The mixin can be called on more than one element per page, as long as they are not nested.
- *
- * @param {Number} $local-max-width ($max-width) - Max width to be applied to the element. Can be a percentage or a measure.
- *
- * @example scss
- *  .element {
- *    @include outer-container(100%);
- *  }
- *
- * @example css
- *  .element {
- *    *zoom: 1;
- *    max-width: 100%;
- *    margin-left: auto;
- *    margin-right: auto;
- *  }
- *
- *  .element:before, .element:after {
- *    content: " ";
- *    display: table;
- *  }
- *
- *  .element:after {
- *    clear: both;
- *  }
- */
-/**
- * Changes the display property used by other mixins called in the code block argument.
- *
- * @param {String} $display (block) - Display value to be used within the block. Can be `table` or `block`.
- *
- * @example scss
- *   @include display(table) {
- *    .display-table {
- *      @include span-columns(6);
- *     }
- *   }
- *
- * @example css
- *   // CSS
- *   .display-table {
- *      display: table-cell;
- *      ...
- *   }
- */
-/**
- * Changes the direction property used by other mixins called in the code block argument.
- *
- * @param {String} $direction (left-to-right) - Layout direction to be used within the block. Can be `left-to-right` or `right-to-left`.
- *
- * @example scss
- *   @include direction(right-to-left) {
- *    .right-to-left-block {
- *      @include span-columns(6);
- *     }
- *   }
- *
- * @example css
- *   // CSS
- *   .right-to-left-block {
- *     float: right;
- *      ...
- *   }
- */
 body {
   overflow-x: hidden; }
 
@@ -322,7 +235,7 @@ body {
 .text-center {
   text-align: center; }
 
-.dark * {
+.dark h3, h4 {
   color: #fff; }
 
 .container {
@@ -350,7 +263,11 @@ body {
       margin: 0 5%; } }
 
 .inline-block {
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto; }
 
 @media screen and (min-width: 64em) and (max-width: 77.5em) {
   .hide-on-mobile {
@@ -619,8 +536,8 @@ header {
   #stats .number {
     float: left;
     display: block;
-    margin-right: 1.0101010101%;
-    width: 19.1919191919%;
+    margin-right: 1.0101%;
+    width: 19.19192%;
     text-align: center; }
     #stats .number:last-child {
       margin-right: 0; }
@@ -641,7 +558,7 @@ header {
         background-image: url(../img/icons/today-512.png); }
       @media screen and (min-width: 40em) and (max-width: 63.9375em) {
         #stats .number.days {
-          margin-left: 5.0505050505%; } }
+          margin-left: 5.05051%; } }
     #stats .number.attendees {
       margin-top: 100px; }
       #stats .number.attendees figure {
@@ -656,14 +573,14 @@ header {
         background-image: url(../img/icons/system_report-512.png); }
       @media screen and (min-width: 40em) and (max-width: 63.9375em) {
         #stats .number.workshops {
-          margin-left: 16.9491525424%; } }
+          margin-left: 10.10101%; } }
     #stats .number.parties {
       margin-top: 160px; }
       #stats .number.parties figure {
         background-image: url(../img/icons/beer-512.png); }
       @media screen and (min-width: 40em) and (max-width: 63.9375em) {
         #stats .number.parties {
-          margin-left: 8.4745762712%; } }
+          margin-left: 5.05051%; } }
     #stats .number .big {
       display: block;
       font-size: 48px;
@@ -672,8 +589,8 @@ header {
       #stats .number {
         float: left;
         display: block;
-        margin-right: 1.0101010101%;
-        width: 29.2929292929%;
+        margin-right: 1.0101%;
+        width: 29.29293%;
         margin-top: 0px !important; }
         #stats .number:last-child {
           margin-right: 0; }
@@ -685,8 +602,8 @@ header {
       #stats .number {
         float: left;
         display: block;
-        margin-right: 1.0101010101%;
-        width: 49.4949494949%;
+        margin-right: 1.0101%;
+        width: 49.49495%;
         margin-top: -100px !important; }
         #stats .number:last-child {
           margin-right: 0; }
@@ -696,24 +613,13 @@ header {
           clear: left; } }
     @media screen and (max-width: 40em) {
       #stats .number:nth-child(2n) {
-        margin-left: 50.5050505051%; } }
+        margin-left: 50.50505%; } }
 
 /* SPEAKERS */
 #speakers {
   padding: 100px 0;
   background: #244659;
-  /*
-  	.speaker-list {
-  		@include block-grid(
-  			$per-row: 3,
-  			$spacing: 0,
-  			$base-style: true
-  		);
-  		> li {
-  			clear: none !important;
-  		}
-  	}
-  */ }
+}
   #speakers .speaker-list .speaker {
     min-height: 360px;
     padding: 20px 10px; }
@@ -721,8 +627,8 @@ header {
       #speakers .speaker-list .speaker {
         float: left;
         display: block;
-        margin-right: 1.0101010101%;
-        width: 19.1919191919%; }
+        margin-right: 1.0101%;
+        width: 19.19192%; }
         #speakers .speaker-list .speaker:last-child {
           margin-right: 0; }
         #speakers .speaker-list .speaker:nth-child(5n) {
@@ -733,8 +639,8 @@ header {
       #speakers .speaker-list .speaker {
         float: left;
         display: block;
-        margin-right: 1.6949152542%;
-        width: 32.2033898305%; }
+        margin-right: 1.0101%;
+        width: 19.19192%; }
         #speakers .speaker-list .speaker:last-child {
           margin-right: 0; }
         #speakers .speaker-list .speaker:nth-child(3n) {
@@ -745,8 +651,8 @@ header {
       #speakers .speaker-list .speaker {
         float: left;
         display: block;
-        margin-right: 1.6949152542%;
-        width: 32.2033898305%; }
+        margin-right: 1.0101%;
+        width: 19.19192%; }
         #speakers .speaker-list .speaker:last-child {
           margin-right: 0; }
         #speakers .speaker-list .speaker:nth-child(3n) {
@@ -774,6 +680,8 @@ header {
         right: 0;
         bottom: 0;
         left: 0; }
+      #speakers .speaker-list .speaker .img .overlay:hover {
+        cursor: pointer; }
       #speakers .speaker-list .speaker .img .overlay {
         background: url(../img/speaker-bg.png) no-repeat left bottom;
         position: absolute;
@@ -797,34 +705,34 @@ header {
           background-size: 20px auto; }
         #speakers .speaker-list .speaker .img .go:hover {
           background: url(../img/speaker-twitter-h.png) no-repeat left bottom; }
-      #speakers .speaker-list .speaker .img .light {
-        position: absolute;
-        bottom: 6px;
-        right: 50px;
-        z-index: 10000;
-        width: 32px;
-        height: 34px;
-        background: url(../img/lightning.png) no-repeat left bottom; }
-        #speakers .speaker-list .speaker .img .light em {
-          display: block;
-          width: 100%;
-          height: 100%;
-          background: url(../img/lightning.svg) no-repeat center;
-          background-size: 30px auto; }
-      #speakers .speaker-list .speaker .img .normal {
-        position: absolute;
-        bottom: 6px;
-        right: 50px;
-        z-index: 10000;
-        width: 32px;
-        height: 34px;
-        background: url(../img/normal.png) no-repeat left bottom; }
-        #speakers .speaker-list .speaker .img .normal em {
-          display: block;
-          width: 100%;
-          height: 100%;
-          background: url(../img/normal.svg) no-repeat center;
-          background-size: 30px auto; }
+	#speakers .speaker-list .speaker .img .light {
+	  position: absolute;
+	  bottom: 6px;
+	  right: 50px;
+	  z-index: 10000;
+	  width: 32px;
+	  height: 34px;
+	  background: url(../img/lightning.png) no-repeat left bottom; }
+	  #speakers .speaker-list .speaker .img .light em {
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    background: url(../img/lightning.svg) no-repeat center;
+	    background-size: 30px auto; }
+	#speakers .speaker-list .speaker .img .normal {
+	  position: absolute;
+	  bottom: 6px;
+	  right: 50px;
+	  z-index: 10000;
+	  width: 32px;
+	  height: 34px;
+	  background: url(../img/normal.png) no-repeat left bottom; }
+	  #speakers .speaker-list .speaker .img .normal em {
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    background: url(../img/normal.svg) no-repeat center;
+	    background-size: 30px auto; }
     #speakers .speaker-list .speaker h3 {
       margin: 0.5em 0 0.5;
       font-weight: 500;
@@ -864,6 +772,33 @@ header {
         #speakers .speaker-list .speaker.tba.short {
           display: none; } }
 
+    #speakers .speaker-list .speaker .modal .modal-window .modal-inner {
+      top: 10%;
+      width: 660px;
+    }
+      #speakers .speaker-list .speaker .modal .modal-window .modal-inner p.body {
+        margin-bottom: 50px;
+      }
+    #speakers .speaker-list .speaker .modal .face {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      width: 180px;
+      height: 180px;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    #speakers .speaker-list .speaker .modal .links {
+      position: absolute;
+      right: 20px;
+      bottom: 0;
+    }
+      #speakers .speaker-list .speaker .modal .links a {
+        color: #1390b0;
+        font-size: 50px;
+      }
+
 #tickets {
   padding: 100px 0;
   background: #0b8c41; }
@@ -876,8 +811,8 @@ header {
     #tickets .batches-and-prices li {
       float: left;
       display: block;
-      margin-right: 1.0101010101%;
-      width: 24.2424242424%;
+      margin-right: 1.0101%;
+      width: 24.24242%;
       border: 3px solid #fff;
       text-align: center; }
       #tickets .batches-and-prices li:last-child {
@@ -961,8 +896,8 @@ header {
     #call .steps > li {
       float: left;
       display: block;
-      margin-right: 1.0101010101%;
-      width: 19.1919191919%;
+      margin-right: 1.0101%;
+      width: 19.19192%;
       min-height: 150px;
       text-align: center; }
       #call .steps > li:last-child {
@@ -987,13 +922,23 @@ header {
     margin-top: 2em; }
     #call .buy-a-ticket .button {
       border-radius: 5px;
-      background: linear-gradient(#ddd, #eee);
+      background: linear, false, #ddd, #eee;
       color: #0b8c41;
       border: 1px solid #097436;
       border-bottom-color: #054520;
       -webkit-box-shadow: 0px 2px 0px #075c2b, inset 0 2px 0px #fff;
       -moz-box-shadow: 0px 2px 0px #075c2b, inset 0 2px 0px #fff;
       box-shadow: 0px 2px 0px #075c2b, inset 0 2px 0px #fff; }
+
+#agenda {
+  padding: 100px 0; }
+
+#agenda .awesome.big.tba {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 10em;
+  line-height: 2em;
+  text-align: center; }
 
 #poznan {
   background: url(../img/poznan.jpg) no-repeat center;
@@ -1060,8 +1005,8 @@ header {
         #hotels .row .hotel {
           float: left;
           display: block;
-          margin-right: 1.0101010101%;
-          width: 29.2929292929%; }
+          margin-right: 1.0101%;
+          width: 29.29293%; }
           #hotels .row .hotel:last-child {
             margin-right: 0; }
           #hotels .row .hotel:nth-child(3n) {
@@ -1069,13 +1014,13 @@ header {
           #hotels .row .hotel:nth-child(3n+1) {
             clear: left; }
           #hotels .row .hotel:nth-child(3n+2), #hotels .row .hotel:nth-child(3n+3) {
-            margin-left: 5.0505050505%; } }
+            margin-left: 5.05051%; } }
       @media screen and (min-width: 64em) and (max-width: 77.5em) {
         #hotels .row .hotel {
           float: left;
           display: block;
-          margin-right: 1.6949152542%;
-          width: 32.2033898305%; }
+          margin-right: 1.0101%;
+          width: 19.19192%; }
           #hotels .row .hotel:last-child {
             margin-right: 0; }
           #hotels .row .hotel:nth-child(3n) {
@@ -1086,8 +1031,8 @@ header {
         #hotels .row .hotel {
           float: left;
           display: block;
-          margin-right: 1.6949152542%;
-          width: 49.1525423729%; }
+          margin-right: 1.0101%;
+          width: 29.29293%; }
           #hotels .row .hotel:last-child {
             margin-right: 0; }
           #hotels .row .hotel:nth-child(2n) {
@@ -1129,21 +1074,21 @@ header {
       #terms .row .column {
         float: left;
         display: block;
-        margin-right: 1.0101010101%;
-        width: 29.2929292929%; }
+        margin-right: 1.0101%;
+        width: 29.29293%; }
         #terms .row .column:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 64em) and (max-width: 77.5em) {
       #terms .row .column {
         float: left;
         display: block;
-        margin-right: 1.6949152542%;
-        width: 32.2033898305%; }
+        margin-right: 1.0101%;
+        width: 19.19192%; }
         #terms .row .column:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 77.5em) {
       #terms .row .column:first-of-type {
-        margin-left: 8.4745762712%; } }
+        margin-left: 5.05051%; } }
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
       #terms .row .column {
         width: 100%; } }
@@ -1164,7 +1109,7 @@ header {
         height: 40px;
         border: 1px solid #ccc;
         border-radius: 100%;
-        line-height: 41px;
+        line-height: 37px;
         color: #bbb;
         font-family: "Raleway"; }
   #terms #code-of-conduct {
@@ -1199,8 +1144,8 @@ footer {
   footer .container div.about-us {
     float: left;
     display: block;
-    margin-right: 5.2631578947%;
-    width: 47.3684210526%; }
+    margin-right: 5.26316%;
+    width: 47.36842%; }
     footer .container div.about-us:last-child {
       margin-right: 0; }
     @media screen and (max-width: 40em) {
@@ -1211,8 +1156,8 @@ footer {
   footer .container div.stay-connected {
     float: left;
     display: block;
-    margin-right: 5.2631578947%;
-    width: 21.0526315789%; }
+    margin-right: 5.26316%;
+    width: 21.05263%; }
     footer .container div.learn-more:last-child,
     footer .container div.stay-connected:last-child {
       margin-right: 0; }
@@ -1243,6 +1188,7 @@ footer {
   padding: 100px 0; }
   #sponsors .sponsors, #sponsors .supporters {
     display: block;
+    text-align: center;
     padding: 0 0 40px; }
     #sponsors .sponsors:after, #sponsors .supporters:after {
       content: "";
@@ -1255,8 +1201,8 @@ footer {
       padding: 20px;
       float: left;
       display: block;
-      margin-right: 1.1235955056%;
-      width: 32.5842696629%; }
+      margin-right: 1.1236%;
+      width: 32.58427%; }
       #sponsors .sponsors .platinum.sponsor .logo-container:last-child, #sponsors .supporters .platinum.sponsor .logo-container:last-child {
         margin-right: 0; }
       #sponsors .sponsors .platinum.sponsor .logo-container .logo, #sponsors .supporters .platinum.sponsor .logo-container .logo {
@@ -1275,8 +1221,8 @@ footer {
       padding: 20px;
       float: left;
       display: block;
-      margin-right: 1.1235955056%;
-      width: 66.2921348315%; }
+      margin-right: 1.1236%;
+      width: 66.29213%; }
       #sponsors .sponsors .platinum.sponsor .description:last-child, #sponsors .supporters .platinum.sponsor .description:last-child {
         margin-right: 0; }
       #sponsors .sponsors .platinum.sponsor .description h3, #sponsors .supporters .platinum.sponsor .description h3 {
@@ -1285,13 +1231,10 @@ footer {
       #sponsors .sponsors .platinum.sponsor .description p, #sponsors .supporters .platinum.sponsor .description p {
         font-size: 12px; }
     #sponsors .sponsors .gold.sponsor, #sponsors .supporters .gold.sponsor {
-      float: left;
-      display: block;
-      margin-right: 1.1235955056%;
-      width: 32.5842696629%;
+      margin: auto;
+      display: inline-block;
+      width: 32.58427%;
       padding: 20px; }
-      #sponsors .sponsors .gold.sponsor:last-child, #sponsors .supporters .gold.sponsor:last-child {
-        margin-right: 0; }
       #sponsors .sponsors .gold.sponsor .logo, #sponsors .supporters .gold.sponsor .logo {
         display: block;
         width: 100%;
@@ -1312,15 +1255,10 @@ footer {
     #sponsors .sponsors .silver.sponsor,
     #sponsors .sponsors .bronze.sponsor, #sponsors .supporters .silver.sponsor,
     #sponsors .supporters .bronze.sponsor {
-      float: left;
-      display: block;
-      margin-right: 1.0101010101%;
-      width: 19.1919191919%;
+      display: inline-block;
+      width: 19.19192%;
+      margin: auto;
       padding: 10px; }
-      #sponsors .sponsors .silver.sponsor:last-child,
-      #sponsors .sponsors .bronze.sponsor:last-child, #sponsors .supporters .silver.sponsor:last-child,
-      #sponsors .supporters .bronze.sponsor:last-child {
-        margin-right: 0; }
       #sponsors .sponsors .silver.sponsor .logo,
       #sponsors .sponsors .bronze.sponsor .logo, #sponsors .supporters .silver.sponsor .logo,
       #sponsors .supporters .bronze.sponsor .logo {
@@ -1339,11 +1277,11 @@ footer {
           display: block;
           padding-top: 70%; }
     #sponsors .sponsors .supporter, #sponsors .supporters .supporter {
-      float: left;
-      display: block;
-      margin-right: 1.0101010101%;
-      width: 19.1919191919%;
+      display: inline-block;
+      width: 19.19192%;
       padding: 10px; }
+    #sponsors .sponsors .supporter:nth-child(5n), #sponsors .supporters .supporter:nth-child(5n) {
+      margin-right: 0; }
       #sponsors .sponsors .supporter:last-child, #sponsors .supporters .supporter:last-child {
         margin-right: 0; }
       #sponsors .sponsors .supporter .logo, #sponsors .supporters .supporter .logo {
@@ -1363,15 +1301,12 @@ footer {
 .modal label {
   cursor: pointer;
   margin-bottom: 0; }
-
 .modal label img {
   border-radius: 150px;
   display: block;
   max-width: 300px; }
-
 .modal input[type="checkbox"] {
   display: none; }
-
 .modal .btn {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
@@ -1403,36 +1338,29 @@ footer {
   background-clip: padding-box;
   font-size: 1em;
   margin-bottom: 1.5em; }
-
-.modal .btn:hover:not(:disabled) {
-  box-shadow: inset 0 1px 0 0 white;
-  cursor: pointer;
-  background-color: #f2f2f2;
-  background-image: -webkit-linear-gradient(#f2f2f2, #dbdbdb);
-  background-image: linear-gradient(#f2f2f2, #dbdbdb); }
-
-.modal .btn:active:not(:disabled), .modal .btn:focus:not(:disabled) {
-  border: 1px solid #dbdbdb;
-  box-shadow: inset 0 0 8px 4px #d4d4d4, inset 0 0 8px 4px #d4d4d4; }
-
-.modal .btn:hover:not(:disabled) {
-  box-shadow: inset 0 1px 0 0 white;
-  cursor: pointer;
-  background-color: #f2f2f2;
-  background-image: -webkit-linear-gradient(#f2f2f2, #ded8d8);
-  background-image: linear-gradient(#f2f2f2, #ded8d8); }
-
-.modal .btn:active:not(:disabled), .modal .btn:focus:not(:disabled) {
-  border: 1px solid #dfd8d8;
-  box-shadow: inset 0 0 8px 4px #d7d1d1, inset 0 0 8px 4px #d7d1d1; }
-
-.modal .btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed; }
-
+  .modal .btn:hover:not(:disabled) {
+    box-shadow: inset 0 1px 0 0 white;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    background-image: -webkit-linear-gradient(#f2f2f2, #dbdbdb);
+    background-image: linear-gradient(#f2f2f2, #dbdbdb); }
+  .modal .btn:active:not(:disabled), .modal .btn:focus:not(:disabled) {
+    border: 1px solid #dbdbdb;
+    box-shadow: inset 0 0 8px 4px #d4d4d4, inset 0 0 8px 4px #d4d4d4; }
+  .modal .btn:hover:not(:disabled) {
+    box-shadow: inset 0 1px 0 0 white;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    background-image: -webkit-linear-gradient(#f2f2f2, #ded8d8);
+    background-image: linear-gradient(#f2f2f2, #ded8d8); }
+  .modal .btn:active:not(:disabled), .modal .btn:focus:not(:disabled) {
+    border: 1px solid #dfd8d8;
+    box-shadow: inset 0 0 8px 4px #d7d1d1, inset 0 0 8px 4px #d7d1d1; }
+  .modal .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed; }
 .modal .modal-open {
   overflow: hidden; }
-
 .modal .modal-window {
   -webkit-transition: opacity 0.25s ease;
   -moz-transition: opacity 0.25s ease;
@@ -1447,15 +1375,13 @@ footer {
   text-align: left;
   visibility: hidden;
   z-index: 99999999999; }
-
-.modal .modal-window .modal-bg {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  cursor: pointer; }
-
+  .modal .modal-window .modal-bg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    cursor: pointer; }
 .modal .modal-close {
   position: absolute;
   top: 1.5em;
@@ -1464,34 +1390,30 @@ footer {
   height: 1.5em;
   cursor: pointer;
   background: white; }
-
-.modal .modal-close:after, .modal .modal-close:before {
-  position: absolute;
-  top: 3px;
-  right: 3px;
-  left: 50%;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  width: 0.15em;
-  height: 1.5em;
-  background: #DDD;
-  content: '';
-  display: block;
-  margin: -3px 0 0 -1px; }
-
-.modal .modal-close:hover:after, .modal .modal-close:hover:before {
-  background: #c4c4c4; }
-
-.modal .modal-close:before {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
-
+  .modal .modal-close:after, .modal .modal-close:before {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    left: 50%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 0.15em;
+    height: 1.5em;
+    background: #DDD;
+    content: '';
+    display: block;
+    margin: -3px 0 0 -1px; }
+  .modal .modal-close:hover:after, .modal .modal-close:hover:before {
+    background: #c4c4c4; }
+  .modal .modal-close:before {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
 .modal .modal-inner {
   -webkit-transition: opacity 0.25s ease;
   -moz-transition: opacity 0.25s ease;
@@ -1505,40 +1427,32 @@ footer {
   width: 95%;
   padding: 1.5em;
   margin-top: .6em; }
-
-.modal .modal-inner h1 {
-  color: #333;
-  margin-bottom: .6em;
-  text-align: left;
-  text-transform: capitalize; }
-
-.modal .modal-inner p {
-  font-size: 1em;
-  max-width: 100% !important;
-  padding: 0;
-  text-align: left; }
-
-.modal .modal-inner p.intro {
-  color: #477DCA;
-  line-height: 1.6em; }
-
-.modal .modal-inner p.body {
-  color: #333;
-  line-height: 1.45em; }
-
-.modal .modal-inner a.cta {
-  color: white;
-  display: inline-block;
-  margin-right: .5em;
-  margin-top: 1em; }
-
-.modal .modal-inner a.cta:last-child {
-  padding: 0 2em; }
-
+  .modal .modal-inner h1 {
+    color: #333;
+    margin-bottom: .6em;
+    text-align: left;
+    text-transform: capitalize; }
+  .modal .modal-inner p {
+    font-size: 1em;
+    max-width: 100% !important;
+    padding: 0;
+    text-align: left; }
+    .modal .modal-inner p.intro {
+      color: #477DCA;
+      line-height: 1.6em; }
+    .modal .modal-inner p.body {
+      color: #333;
+      line-height: 1.45em; }
+  .modal .modal-inner a.cta {
+    color: white;
+    display: inline-block;
+    margin-right: .5em;
+    margin-top: 1em; }
+    .modal .modal-inner a.cta:last-child {
+      padding: 0 2em; }
 .modal .modal-state:checked + .modal-window {
   opacity: 1;
   visibility: visible; }
-
 .modal .modal-state:checked + .modal-window .modal-inner {
   top: 0; }
 
@@ -1553,19 +1467,11 @@ footer {
     #agenda .row .day {
       float: left;
       display: block;
-      margin-right: 1.0101010101%;
-      width: 49.4949494949%;
+      margin-right: 1.0101%;
+      width: 49.49495%;
       padding: 20px; }
       #agenda .row .day:last-child {
         margin-right: 0; }
-      @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-        #agenda .row .day {
-          width: 100%;
-          margin-bottom: 1em; } }
-      @media screen and (max-width: 40em) {
-        #agenda .row .day {
-          width: 100%;
-          margin-bottom: 1em; } }
   #agenda .event-list {
     margin: 0;
     padding: 0;
@@ -1578,70 +1484,41 @@ footer {
       display: table;
       width: 100%;
       table-layout: fixed;
+      border-bottom: 1px solid #ccc; 
       position: relative;
-      border-bottom: 1px solid #ccc; }
-      #agenda .event-list .event .light {
-        position: absolute;
-        left: -4px;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%);
-        z-index: 10000;
-        width: 28px;
-        height: 28px;
-        background: url(../img/lightning.png) no-repeat center; }
-        #agenda .event-list .event .light em {
-          display: block;
-          width: 100%;
-          height: 100%;
-          background: url(../img/lightning.svg) no-repeat center;
-          background-size: 24px auto; }
-      #agenda .event-list .event .normal {
-        position: absolute;
-        left: -4px;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%);
-        z-index: 10000;
-        width: 28px;
-        height: 28px;
-        background: url(../img/normal.png) no-repeat center; }
-        #agenda .event-list .event .normal em {
-          display: block;
-          width: 100%;
-          height: 100%;
-          background: url(../img/normal.svg) no-repeat center;
-          background-size: 24px auto; }
-      #agenda .event-list .event > div {
+	}
+      #agenda .event-list .event:after {
+        content: "";
+        display: table;
+        clear: both; }
+      #agenda .event-list .event label {
+        font-weight: normal;
+        margin: auto;
+      }
+      #agenda .event-list .event label:hover {
+        cursor: pointer; }
+      #agenda .event-list .event > div, #agenda .event-list .event label > div {
         padding: 10px 0;
         vertical-align: top; }
-        #agenda .event-list .event > div.time {
+        #agenda .event-list .event > div.time, #agenda .event-list .event label > div.time {
           display: table-cell;
-          width: 30%;
           width: 150px;
           padding-right: 20px;
           text-align: right;
           font-size: 1em;
           line-height: 1.625em;
           font-weight: 300; }
-        #agenda .event-list .event > div.name {
-          display: table-cell;
-          width: 70%; }
-          #agenda .event-list .event > div.name span.title {
+        #agenda .event-list .event > div.name, #agenda .event-list .event label > div.name {
+          display: table-cell; }
+          #agenda .event-list .event > div.name span.title, #agenda .event-list .event label > div.name span.title {
             display: block;
             font-size: 1.25em;
             line-height: 1.25em; }
-          #agenda .event-list .event > div.name span.person {
+          #agenda .event-list .event > div.name span.person, #agenda .event-list .event label > div.name span.person {
             font-size: 0.875em;
             display: block;
             color: #666; }
-          #agenda .event-list .event > div.name span.tags span.tag {
+          #agenda .event-list .event > div.name span.tags span.tag, #agenda .event-list .event label > div.name span.tags span.tag {
             display: inline-block;
             background: #666;
             color: #fff;
@@ -1650,3 +1527,126 @@ footer {
             font-weight: 500;
             padding: 4px 4px;
             text-transform: uppercase; }
+      #agenda .event-list .event div.modal {
+        padding: 0;
+      }
+      
+#agenda .event-list .event .light {
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 28px;
+  height: 28px;
+  background: url(../img/lightning.png) no-repeat center; }
+  #agenda .event-list .event .light em {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../img/lightning.svg) no-repeat center;
+    background-size: 24px auto; }
+#agenda .event-list .event .normal {
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 28px;
+  height: 28px;
+  background: url(../img/normal.png) no-repeat center; }
+  #agenda .event-list .event .normal em {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../img/normal.svg) no-repeat center;
+    background-size: 24px auto; }
+
+#venue {
+  background: #313d44;
+}
+
+#venue .container {
+}
+
+#venue #map {
+  position: relative;
+  height: 500px;
+  background: #000;
+  margin-top: 100px;
+}
+
+#venue #map iframe {
+  width: 100%;
+  height: 500px;
+}
+
+#venue .hotels {
+  padding-top: 100px;
+}
+
+#venue .hotels .hotel {
+  font-size: 1em;
+}
+
+#venue .hotels .hotel h3 {
+  color: #fff;
+  font-size: 1.3em;
+  line-height: 1.2em;
+  margin: 1em 0 0.25em;
+}
+
+#venue .hotels .hotel p.prices-header {
+  color: #fff;
+  font-size: 0.75em;
+  line-height: 1.2em;
+  margin: 1em 0;
+}
+
+
+#venue .hotels .hotel p.address {
+  font-size: 0.75em;
+}
+
+#venue .hotels .hotel table,
+#venue .hotels .hotel table tr.even,
+#venue .hotels .hotel table tr.alt,
+#venue .hotels .hotel table tr:nth-of-type(even) {
+  background: transparent;
+}
+
+#venue .hotels .hotel table {
+  border: 1px solid rgba(255,255,255,0.2);
+  min-width: 80%;
+}
+
+#venue .hotels .hotel table td {
+  border-bottom: 1px solid rgba(255,255,255,0.1);;
+  color: #ccc;
+  font-size: 0.8em;
+  padding: 0.4em 0.5em;
+}
+
+#venue .hotels .hotel table td:last-child {
+  text-align: right;
+}
+
+#venue .hotels .hotel table tr:last-child td {
+  border-bottom: none;
+}
+
+#venue .awesome.big.tba {
+  font-family: Nexa;
+  color: rgba(255,255,255,0.05);
+  font-size: 10em;
+  line-height: 2em;
+  text-align: center;
+}
