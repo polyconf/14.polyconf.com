@@ -1073,6 +1073,7 @@ header {
 
 #hotels {
   padding: 100px 0;
+  color: #fff;
   background: #516570; }
   #hotels .row {
     max-width: 73.75em;
@@ -1742,13 +1743,13 @@ footer {
             text-transform: uppercase; }
 
 #venue {
+  padding-top: 100px;
   background: #313d44; }
 
 #venue #map {
   position: relative;
   height: 500px;
-  background: #000;
-  margin-top: 100px; }
+  background: #000; }
 
 #venue #map iframe {
   width: 100%;
