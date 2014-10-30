@@ -1,0 +1,17 @@
+.button,
+button,
+input[type="submit"] {
+  @extend %button;
+  @include appearance(none);
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.small.button {
+	font-size: 14px;
+  padding: .5em 0.75em;
+  line-height: 1;
+}
